@@ -1,437 +1,397 @@
+
 <!DOCTYPE html>
+
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>中聯油脂大豆沙拉油苯駢芘超標事件懶人包：對照式時間軸 × 各方說法</title>
 <style>
-:root {
-  --bg:#f6f2e9; --paper:#fffdf8; --ink:#1d2633; --muted:#667085; --line:#e6ded0;
-  --navy:#19304a; --navy2:#0f2238; --red:#b5473d; --orange:#b75e20; --teal:#27736b;
-  --blue:#2f5d8c; --green:#336b4f; --gold:#ad7a2d; --shadow:0 18px 45px rgba(20, 31, 46, .12);
+:root{
+  --bg:#f6f2e9;--paper:#fffdf8;--ink:#1d2633;--muted:#667085;--line:#e6ded0;
+  --navy:#19304a;--navy2:#0f2238;--red:#b5473d;--orange:#b75e20;--teal:#27736b;
+  --blue:#2f5d8c;--green:#336b4f;--gold:#ad7a2d;--shadow:0 18px 45px rgba(20,31,46,.12);
 }
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
-a{color:#1f5f9d;text-decoration:none} a:hover{text-decoration:underline}
-.hero{background:linear-gradient(135deg,var(--navy2),var(--navy));color:white;padding:54px 7vw 34px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;right:-120px;top:-160px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.08)}
-.hero h1{font-size:clamp(30px,4vw,52px);line-height:1.15;margin:0 0 14px;font-weight:850;letter-spacing:.01em;position:relative;z-index:1}.hero p{max-width:980px;margin:0;color:#d8e4ef;font-size:17px;position:relative;z-index:1}
-.meta{margin-top:18px;color:#b8cad9;font-size:14px;position:relative;z-index:1}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:28px 0 0;max-width:1100px;position:relative;z-index:1}.kpi{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:18px 18px;backdrop-filter:blur(8px)}.kpi strong{display:block;font-size:27px;line-height:1.1;color:#fff}.kpi span{display:block;margin-top:8px;color:#dbe7f2;font-size:14px;white-space:pre-line}
-nav{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:10px 7vw;display:flex;gap:10px;overflow:auto}nav a{white-space:nowrap;color:var(--navy);font-weight:700;font-size:14px;background:#f1ece2;border:1px solid #e2d8c6;border-radius:999px;padding:8px 14px}
-main{padding:34px 7vw 70px}.section-title{margin:32px 0 16px}.section-title .eyebrow,.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800;font-size:12px;margin:0 0 6px}.section-title h2{font-size:clamp(24px,2.6vw,36px);margin:0;line-height:1.25}.section-title p{margin:8px 0 0;color:var(--muted);max-width:960px}
-.control-panel{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0 22px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 10px 28px rgba(18,31,47,.05)}.search{flex:1 1 360px;border:1px solid #d8cfbf;border-radius:12px;padding:12px 14px;font-size:15px;background:white;color:var(--ink)}.hint{color:var(--muted);font-size:13px}
-.explosion-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:20px;margin:18px 0 26px;overflow:hidden}.explosion-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:12px}.explosion-head h3{margin:0 0 4px;color:var(--navy)}.explosion-head p{margin:0;color:var(--muted);font-size:14px}.legend{white-space:nowrap;color:var(--muted);font-weight:800;font-size:13px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 5px 0 12px;vertical-align:middle}.dot.news{background:#2f5d8c}.dot.social{background:#b75e20}.dot.forum{background:#27736b}.line-chart{width:100%;height:auto;display:block}.grid-line{stroke:#e5ddcf;stroke-width:1}.axis-label{fill:#7a7167;font-size:12px}.x-label{fill:#20344f;font-size:13px;font-weight:800}.x-sub{fill:#776b5f;font-size:11px}.volume-line{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.volume-line.news{stroke:#2f5d8c}.volume-line.social{stroke:#b75e20}.volume-line.forum{stroke:#27736b;stroke-width:3}.series-point{stroke:white;stroke-width:2}.series-point.news{fill:#2f5d8c}.series-point.social{fill:#b75e20}.series-point.forum{fill:#27736b}.point circle{stroke:white;stroke-width:3}.point.cool circle{fill:#9aa8b5}.point.warm circle{fill:#d88937}.point.hot circle{fill:#b5473d}.inline-source{display:inline-block;margin-left:4px;font-weight:700}.value-label{fill:#20344f;font-size:12px;font-weight:900;paint-order:stroke;stroke:#fffdf8;stroke-width:4px}
-.timeline{position:relative;margin-top:12px}.timeline:before{content:"";position:absolute;left:23px;top:0;bottom:0;width:2px;background:#d8cfbf}.timeline-card{display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;margin:0 0 22px}.time-marker{position:relative;z-index:1;padding-top:18px}.time-marker span{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--navy);color:white;font-weight:900;border:5px solid var(--bg);box-shadow:0 4px 14px rgba(25,48,74,.22)}.timeline-card.burst-high .time-marker span{background:#b5473d}.timeline-card.burst-mid .time-marker span{background:#b75e20}.timeline-card.burst-low .time-marker span{background:#2f5d8c}.timeline-content{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}.timeline-card.burst-high .timeline-content{border-color:#e1a197;box-shadow:0 20px 50px rgba(181,71,61,.18)}.timeline-head{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 22px 16px;background:linear-gradient(180deg,#fffaf0,#fffdf8);border-bottom:1px solid var(--line)}.timeline-head h3{font-size:24px;margin:0;color:var(--navy)}.toggle{border:1px solid #d7c9b5;background:white;color:var(--navy);border-radius:999px;padding:8px 14px;font-weight:800;cursor:pointer;white-space:nowrap}.always-visible{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(310px,.7fr);gap:16px;padding:18px;border-bottom:1px solid var(--line);background:#fffdf8}.event-context{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;border-top:5px solid var(--navy)}.event-context h4,.volume-visible h4{margin:0 0 10px;color:var(--navy)}.event-context p{margin:0 0 8px}.event-context p:last-child{margin-bottom:0}.volume-box,.volume-empty{height:100%;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;justify-content:center}.volume-empty span,.volume-top span{font-size:12px;color:var(--muted);font-weight:800;letter-spacing:.04em}.volume-empty strong{font-size:20px;color:#7a7167}.volume-empty small{color:var(--muted)}.volume-top{display:flex;justify-content:space-between;gap:12px;align-items:end;margin-bottom:10px}.volume-top strong{font-size:30px;line-height:1;color:#b5473d}.stackbar{height:16px;background:#eee7dc;border-radius:999px;overflow:hidden;display:flex;margin-bottom:10px}.seg.news{background:#2f5d8c}.seg.social{background:#b75e20}.seg.forum{background:#27736b}.metric-row{display:flex;flex-wrap:wrap;gap:7px}.metric-chip{display:inline-flex;gap:6px;align-items:center;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800;background:#f3f0e8}.metric-chip b{font-variant-numeric:tabular-nums}.metric-chip.news{color:#2f5d8c}.metric-chip.social{color:#b75e20}.metric-chip.forum{color:#27736b}
-.voice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:18px}.voice-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px;min-height:150px}.voice-card h4{margin:0 0 10px;font-size:15px;color:var(--navy)}.voice-card.zhonglian{border-top:5px solid var(--red)}.voice-card.gov{border-top:5px solid var(--blue)}.voice-card.nanqiao{border-top:5px solid var(--teal)}.voice-card.brands{border-top:5px solid var(--gold)}.voice-card.downstream{border-top:5px solid var(--orange)}.voice-text p{margin:0 0 8px;font-size:14px}.voice-text p:last-child{margin-bottom:0}.mini-label{display:inline-block;background:#f1ece2;border:1px solid #e3d8c8;border-radius:999px;padding:2px 9px;margin-bottom:8px;font-weight:800;font-size:12px;color:#5b513f}.muted{color:#9a8d7c}.sources-inline{padding:0 18px 18px}.sources-inline strong{display:block;margin-bottom:10px;color:var(--muted);font-size:13px}.source-btn{display:inline-block;margin:0 8px 8px 0;padding:8px 12px;border-radius:999px;background:#eef4fb;border:1px solid #d7e5f5;color:#244e7e;font-weight:700;font-size:13px}.source-note{display:inline-block;color:var(--muted);font-size:13px;margin-right:8px}.grid-2{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:20px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:22px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff}table{width:100%;border-collapse:collapse;font-size:14px}th{background:#233a55;color:white;text-align:left;padding:12px;position:sticky;top:0}td{vertical-align:top;padding:12px;border-top:1px solid #eee5d9}tr:nth-child(even) td{background:#fffaf2}.pill{display:inline-block;border-radius:999px;padding:4px 10px;font-weight:800;font-size:12px;background:#eef0f3;color:#344054}.risk-high{background:#fde8e3;color:#9d2b22}.risk-mid-high{background:#fff0d7;color:#985600}.risk-mid{background:#e8f2fb;color:#225579}.risk-low{background:#e6f4ed;color:#206244}.section-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:22px;margin:18px 0}.section-card h3{margin:0 0 16px;color:var(--navy);line-height:1.35}.opinion-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.opinion-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px}.opinion-item h4{margin:0 0 8px;color:#3c4b5f}.opinion-item p{margin:0;color:#344054;font-size:14px}.source-table td:nth-child(3){word-break:break-all}.footer{padding:26px 7vw;background:#102338;color:#d9e7f4;font-size:13px}.hidden{display:none!important}
-@media (max-width:1100px){.voice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-2{grid-template-columns:1fr}.always-visible{grid-template-columns:1fr}.explosion-head{display:block}.legend{margin-top:10px}.line-chart{min-width:900px}.explosion-card{overflow-x:auto}}
-@media (max-width:720px){.hero{padding:38px 20px 28px}nav,main{padding-left:20px;padding-right:20px}.kpis,.voice-grid,.opinion-grid{grid-template-columns:1fr}.timeline{margin-left:0}.timeline:before{left:17px}.timeline-card{grid-template-columns:42px minmax(0,1fr);gap:8px}.time-marker span{width:36px;height:36px;border-width:4px;font-size:12px}.timeline-head{padding:18px;align-items:flex-start}.always-visible,.voice-grid{padding:14px}.sources-inline{padding:0 14px 14px}.volume-top strong{font-size:24px}}
-@media print{nav,.control-panel,.toggle{display:none}body{background:white}.timeline-content,.panel,.section-card,.explosion-card{box-shadow:none;break-inside:avoid}.voice-grid{grid-template-columns:repeat(2,1fr)}a{color:#000;text-decoration:underline}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}a{color:#1f5f9d;text-decoration:none}a:hover{text-decoration:underline}.hero{background:linear-gradient(135deg,var(--navy2),var(--navy));color:white;padding:54px 7vw 34px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-120px;top:-160px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.08)}.hero h1{font-size:clamp(30px,4vw,52px);line-height:1.15;margin:0 0 14px;font-weight:850;letter-spacing:.01em;position:relative;z-index:1}.hero p{max-width:1080px;margin:0;color:#d8e4ef;font-size:17px;position:relative;z-index:1}.meta{margin-top:18px;color:#b8cad9;font-size:14px;position:relative;z-index:1}.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 0;max-width:1180px;position:relative;z-index:1}.kpi{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:18px 18px;backdrop-filter:blur(8px)}.kpi strong{display:block;font-size:27px;line-height:1.1;color:#fff}.kpi span{display:block;margin-top:8px;color:#dbe7f2;font-size:14px;white-space:pre-line}nav{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:10px 7vw;display:flex;gap:10px;overflow:auto}nav a{white-space:nowrap;color:var(--navy);font-weight:700;font-size:14px;background:#f1ece2;border:1px solid #e2d8c6;border-radius:999px;padding:8px 14px}main{padding:34px 7vw 70px}.section-title{margin:32px 0 16px}.section-title .eyebrow,.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800;font-size:12px;margin:0 0 6px}.section-title h2{font-size:clamp(24px,2.6vw,36px);margin:0;line-height:1.25}.section-title p{margin:8px 0 0;color:var(--muted);max-width:960px}.trend-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:20px;margin:18px 0 28px}.trend-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:10px}.trend-head h3{font-size:22px;margin:0}.trend-head p{margin:6px 0 0;color:var(--muted)}.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.legend span{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:#fff}.swatch{width:12px;height:12px;border-radius:50%;display:inline-block}.sw-news{background:var(--blue)}.sw-social{background:var(--red)}.sw-forum{background:var(--teal)}.sw-total{background:#d8b16b}.chart-wrap{width:100%;overflow:hidden}.trend-svg{width:100%;height:auto;display:block}.grid{stroke:#e7dfd2;stroke-width:1}.axis{stroke:#bcb2a2;stroke-width:1.2}.axis-label,.tick{fill:#667085;font-size:13px}.tick.total{font-size:12px;fill:#9b6f28;font-weight:700}.chart-title{font-size:17px;font-weight:800;fill:#19304a}.trend-line{fill:none;stroke-width:3.2;stroke-linejoin:round;stroke-linecap:round}.line-news{stroke:var(--blue);fill:var(--blue)}.line-social{stroke:var(--red);fill:var(--red)}.line-forum{stroke:var(--teal);fill:var(--teal)}.line-total{fill:none;stroke:#d8b16b;stroke-width:2;stroke-dasharray:5 5;stroke-linecap:round;opacity:.82}.dot{stroke:#fff;stroke-width:2;cursor:pointer}.chart-jump{cursor:pointer}.chart-jump:hover .dot{r:7}.trend-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}.metric{background:#f8f3ea;border:1px solid var(--line);border-radius:16px;padding:12px}.metric b{display:block;font-size:20px;color:var(--navy)}.metric span{font-size:13px;color:var(--muted)}.timeline-stack{display:grid;gap:18px;position:relative;padding-left:32px}.timeline-stack:before{content:"";position:absolute;left:10px;top:4px;bottom:4px;width:3px;border-radius:999px;background:linear-gradient(180deg,#d9c4a5 0%,#b5473d 52%,#7b2e28 100%);box-shadow:0 0 0 6px rgba(255,253,248,.7)}.timeline-card{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:0 10px 28px rgba(18,31,47,.06);overflow:visible;scroll-margin-top:86px}.timeline-card:before{content:"";position:absolute;left:-30px;top:25px;width:15px;height:15px;border-radius:50%;background:#fffdf8;border:4px solid #d6bd93;box-shadow:0 0 0 4px rgba(255,253,248,.95),0 5px 13px rgba(20,31,46,.18);z-index:2}.timeline-card.volume-none{background:linear-gradient(90deg,#fffdf8 0%,#fffdf8 100%)}.timeline-card.volume-low{background:linear-gradient(90deg,#fffdf8 0%,#fff7ea 100%)}.timeline-card.volume-mid{background:linear-gradient(90deg,#fffdf8 0%,#fff0d4 60%,#ffe6bd 100%)}.timeline-card.volume-high{background:linear-gradient(90deg,#fffdf8 0%,#fbe2cc 55%,#f4c7a2 100%)}.timeline-card.volume-peak{background:linear-gradient(90deg,#fffdf8 0%,#f4c8bd 55%,#eaa092 100%)}.timeline-card.volume-peak:before{border-color:#b5473d}.timeline-card.volume-high:before{border-color:#c77742}.timeline-card.volume-mid:before{border-color:#d49b49}.timeline-card[open]{box-shadow:var(--shadow);border-color:#d7c7ad}.timeline-card:target{outline:4px solid rgba(181,71,61,.22)}.timeline-card.highlight{animation:pulse 1.5s ease}@keyframes pulse{0%{outline:5px solid rgba(181,71,61,.42)}100%{outline:0 solid transparent}}summary{cursor:pointer;list-style:none;padding:18px 20px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start}summary::-webkit-details-marker{display:none}.date-title{font-size:20px;line-height:1.35;font-weight:850;color:var(--navy)}.event-preview{margin-top:8px;color:#4a5360;font-size:14px;max-width:1080px}.open-indicator{flex:0 0 auto;background:#f2eadf;border:1px solid #ded1bd;color:#7a5834;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:800}.timeline-card[open] .open-indicator{background:#e9d7c7;color:#884c28}.voice-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.voice-pill{display:inline-flex;gap:6px;align-items:center;background:#f7efe4;border:1px solid #eadbc8;color:#6d4b24;border-radius:999px;padding:4px 10px;font-size:12px}.timeline-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:0 20px 18px}.statement{border:1px solid var(--line);background:#fffaf2;border-radius:16px;padding:14px}.statement h4{font-size:14px;color:var(--muted);letter-spacing:.03em;margin:0 0 8px}.statement p{margin:0;white-space:normal}.links-row{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px 18px}.links-row a,.source-chip{display:inline-flex;align-items:center;background:#eef4fb;color:#245a8f;border:1px solid #cfe2f2;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700}.source-chip{margin-left:6px;padding:3px 8px;vertical-align:baseline}.table-wrap{overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 28px rgba(18,31,47,.05)}table{width:100%;border-collapse:collapse}th{background:#19304a;color:white;text-align:left;padding:12px 14px;font-size:14px;white-space:nowrap}td{border-top:1px solid var(--line);padding:12px 14px;vertical-align:top}tbody tr:nth-child(even) td{background:#fff8ee}.risk{display:inline-block;border-radius:999px;padding:4px 10px;font-weight:800;font-size:12px}.risk-high{background:#f9d7d4;color:#9d2f27}.risk-mid{background:#f7ead2;color:#8a571e}.analysis-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}.analysis-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:0 10px 28px rgba(18,31,47,.05);padding:18px}.analysis-card h3{margin:0 0 12px;color:var(--navy);font-size:20px}.mini{box-shadow:none;border-radius:14px}.topic-cell{font-weight:800;color:#334155;min-width:130px}.source-group{background:var(--paper);border:1px solid var(--line);border-radius:18px;margin-bottom:12px;padding:14px}.source-group h4{margin:0 0 10px;color:var(--navy)}.source-table td:nth-child(3){word-break:break-all}.source-table a{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}.footer-note{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}@media(max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.trend-head{display:block}.legend{margin-top:12px}.trend-metrics{grid-template-columns:1fr}.timeline-grid{grid-template-columns:1fr}summary{display:block}.open-indicator{display:inline-block;margin-top:12px}.date-title{font-size:18px}}@media(max-width:560px){.hero,main,nav{padding-left:18px;padding-right:18px}.kpis{grid-template-columns:1fr}.trend-card{padding:14px}.axis-label{font-size:11px}.tick{font-size:11px}td,th{padding:10px}}
 </style>
 </head>
 <body>
 <header class="hero">
-  <p class="eyebrow">Crisis Timeline Website</p>
-  <h1>中聯油脂大豆沙拉油苯駢芘超標事件：對照式時間軸 × 各方說法</h1>
-  <p>整理範圍：事件脈絡、中聯油脂、南僑、中央／地方政府、福懋／福壽／泰山、257家下游／輿論與KOL，以及主要新聞與官方連結。</p>
-  <div class="meta">資料來源：上傳 Excel「中聯油脂_對照式時間軸_各方說法v2.xlsx」｜生成時間：2026/07/07 03:45</div>
-  <div class="kpis"><div class="kpi"><strong>8.1 μg/kg</strong><span>問題油品苯駢芘檢出值</span></div><div class="kpi"><strong>2.0 μg/kg</strong><span>食用油脂法規限量</span></div><div class="kpi"><strong>約1,300公噸</strong><span>流向福懋、福壽、泰山之問題油</span></div><div class="kpi"><strong>257家</strong><span>食藥署公布第二層受影響業者</span></div></div>
+<h1>中聯油脂大豆沙拉油苯駢芘超標事件懶人包：對照式時間軸 × 各方說法</h1>
+<p>整理範圍：事件脈絡、中聯油脂、南僑、中央／地方政府、福懋／福壽／泰山、360家下游／輿論與KOL，以及主要新聞與官方連結。</p>
+<div class="meta">資料來源：上傳之 Excel v3 檔案｜外部連結皆以新分頁開啟</div>
+<div class="kpis"><div class="kpi"><strong>8.1 μg/kg</strong><span>問題油品苯駢芘檢出值</span></div>
+<div class="kpi"><strong>2.0 μg/kg</strong><span>食用油脂法規限量</span></div>
+<div class="kpi"><strong>約1,300公噸</strong><span>流向福懋、福壽、泰山之問題油</span></div>
+<div class="kpi"><strong>360家／232項產品</strong><span>食藥署7/7更新掌握業者與產品明細</span></div>
+<div class="kpi"><strong>7/8 24:00</strong><span>使用受影響油品產品全面預防性下架期限</span></div>
+<div class="kpi"><strong>1億6520萬元</strong><span>衛福部對中聯延遲通報與追查不實裁罰</span></div></div>
 </header>
 <nav>
-  <a href="#timeline">對照式時間軸與聲量</a>
-  <a href="#sentiment">社會與網路輿論</a>
-  <a href="#platforms">KOL／平台評論</a>
-  <a href="#sources">來源連結</a>
+<a href="#trend">整體輿情聲量走勢</a>
+<a href="#timeline">對照式時間軸</a>
+<a href="#sentiment">社會與網路輿論</a>
+<a href="#kol">KOL、專家與平台討論</a>
+<a href="#sources">來源連結</a>
 </nav>
 <main>
+<section id="trend">
+<div class="section-title">
+<div class="eyebrow">Trend</div>
+<h2>整體輿情聲量走勢</h2>
+<p>點擊圖上的日期或數據點，可跳到下方對應時間軸節點。</p>
+</div>
+<div class="trend-card">
+<div class="trend-head">
+<div>
+<h3>新聞 × 社群 × 討論區每日聲量</h3>
+<p>7/2 與 7/3 已拆為兩個獨立日期點；圖表寬度會依螢幕自動縮放。</p>
+</div>
+<div class="legend">
+<span><i class="swatch sw-news"></i>新聞</span>
+<span><i class="swatch sw-social"></i>社群</span>
+<span><i class="swatch sw-forum"></i>討論區</span>
+<span><i class="swatch sw-total"></i>總聲量參考線</span>
+</div>
+</div>
+<div class="chart-wrap">
+<svg aria-label="整體輿情聲量走勢：新聞、社群與討論區每日聲量折線圖" class="trend-svg" role="img" viewbox="0 0 1100 440">
+
+<text class="chart-title" x="78" y="28">每日聲量分布</text>
+<line class="grid" x1="78" x2="1065" y1="360.0" y2="360.0"></line><text class="axis-label" text-anchor="end" x="66" y="364.0">0</text><line class="grid" x1="78" x2="1065" y1="283.0" y2="283.0"></line><text class="axis-label" text-anchor="end" x="66" y="287.0">5,000</text><line class="grid" x1="78" x2="1065" y1="206.0" y2="206.0"></line><text class="axis-label" text-anchor="end" x="66" y="210.0">10,000</text><line class="grid" x1="78" x2="1065" y1="129.0" y2="129.0"></line><text class="axis-label" text-anchor="end" x="66" y="133.0">15,000</text><line class="grid" x1="78" x2="1065" y1="52.0" y2="52.0"></line><text class="axis-label" text-anchor="end" x="66" y="56.0">20,000</text>
+<line class="axis" x1="78" x2="1065" y1="360" y2="360"></line>
+<line class="axis" x1="78" x2="78" y1="52" y2="360"></line>
+
+<path class="line-total" d="M78.00,359.46 L219.00,350.96 L360.00,270.46 L501.00,256.77 L642.00,259.04 L783.00,187.10 L924.00,169.36 L1065.00,114.28"></path>
+<path class="trend-line line-news" d="M78.00,359.49 L219.00,355.15 L360.00,325.43 L501.00,327.86 L642.00,346.85 L783.00,338.50 L924.00,331.68 L1065.00,330.34"></path>
+<path class="trend-line line-social" d="M78.00,359.97 L219.00,356.20 L360.00,307.12 L501.00,293.19 L642.00,276.81 L783.00,212.48 L924.00,205.65 L1065.00,161.39"></path>
+<path class="trend-line line-forum" d="M78.00,360.00 L219.00,359.62 L360.00,357.92 L501.00,355.72 L642.00,355.38 L783.00,356.12 L924.00,352.04 L1065.00,342.55"></path>
+<a class="chart-jump" data-scroll-target="time-2026-06-30" href="#time-2026-06-30"><circle class="dot line-news" cx="78.0" cy="359.5" r="5.8"><title>2026-06-30｜新聞 33</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-01" href="#time-2026-07-01"><circle class="dot line-news" cx="219.0" cy="355.1" r="5.8"><title>2026-07-01｜新聞 315</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><circle class="dot line-news" cx="360.0" cy="325.4" r="5.8"><title>2026-07-02｜新聞 2,245</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><circle class="dot line-news" cx="501.0" cy="327.9" r="5.8"><title>2026-07-03｜新聞 2,087</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-04" href="#time-2026-07-04"><circle class="dot line-news" cx="642.0" cy="346.8" r="5.8"><title>2026-07-04｜新聞 854</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-05" href="#time-2026-07-05"><circle class="dot line-news" cx="783.0" cy="338.5" r="5.8"><title>2026-07-05｜新聞 1,396</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-06" href="#time-2026-07-06"><circle class="dot line-news" cx="924.0" cy="331.7" r="5.8"><title>2026-07-06｜新聞 1,839</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-07" href="#time-2026-07-07"><circle class="dot line-news" cx="1065.0" cy="330.3" r="5.8"><title>2026-07-07｜新聞 1,926</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-06-30" href="#time-2026-06-30"><circle class="dot line-social" cx="78.0" cy="360.0" r="5.8"><title>2026-06-30｜社群 2</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-01" href="#time-2026-07-01"><circle class="dot line-social" cx="219.0" cy="356.2" r="5.8"><title>2026-07-01｜社群 247</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><circle class="dot line-social" cx="360.0" cy="307.1" r="5.8"><title>2026-07-02｜社群 3,434</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><circle class="dot line-social" cx="501.0" cy="293.2" r="5.8"><title>2026-07-03｜社群 4,338</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-04" href="#time-2026-07-04"><circle class="dot line-social" cx="642.0" cy="276.8" r="5.8"><title>2026-07-04｜社群 5,402</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-05" href="#time-2026-07-05"><circle class="dot line-social" cx="783.0" cy="212.5" r="5.8"><title>2026-07-05｜社群 9,579</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-06" href="#time-2026-07-06"><circle class="dot line-social" cx="924.0" cy="205.6" r="5.8"><title>2026-07-06｜社群 10,023</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-07" href="#time-2026-07-07"><circle class="dot line-social" cx="1065.0" cy="161.4" r="5.8"><title>2026-07-07｜社群 12,897</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-06-30" href="#time-2026-06-30"><circle class="dot line-forum" cx="78.0" cy="360.0" r="5.8"><title>2026-06-30｜討論區 0</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-01" href="#time-2026-07-01"><circle class="dot line-forum" cx="219.0" cy="359.6" r="5.8"><title>2026-07-01｜討論區 25</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><circle class="dot line-forum" cx="360.0" cy="357.9" r="5.8"><title>2026-07-02｜討論區 135</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><circle class="dot line-forum" cx="501.0" cy="355.7" r="5.8"><title>2026-07-03｜討論區 278</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-04" href="#time-2026-07-04"><circle class="dot line-forum" cx="642.0" cy="355.4" r="5.8"><title>2026-07-04｜討論區 300</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-05" href="#time-2026-07-05"><circle class="dot line-forum" cx="783.0" cy="356.1" r="5.8"><title>2026-07-05｜討論區 252</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-06" href="#time-2026-07-06"><circle class="dot line-forum" cx="924.0" cy="352.0" r="5.8"><title>2026-07-06｜討論區 517</title></circle></a><a class="chart-jump" data-scroll-target="time-2026-07-07" href="#time-2026-07-07"><circle class="dot line-forum" cx="1065.0" cy="342.6" r="5.8"><title>2026-07-07｜討論區 1,133</title></circle></a>
+<a class="chart-jump" data-scroll-target="time-2026-06-30" href="#time-2026-06-30"><rect fill="transparent" height="356" width="68" x="44.0" y="52"><title>2026-06-30｜新聞 33、社群 2、討論區 0</title></rect></a><a class="chart-jump" data-scroll-target="time-2026-07-01" href="#time-2026-07-01"><rect fill="transparent" height="356" width="68" x="185.0" y="52"><title>2026-07-01｜新聞 315、社群 247、討論區 25</title></rect></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><rect fill="transparent" height="356" width="68" x="326.0" y="52"><title>2026-07-02｜新聞 2,245、社群 3,434、討論區 135</title></rect></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><rect fill="transparent" height="356" width="68" x="467.0" y="52"><title>2026-07-03｜新聞 2,087、社群 4,338、討論區 278</title></rect></a><a class="chart-jump" data-scroll-target="time-2026-07-04" href="#time-2026-07-04"><rect fill="transparent" height="356" width="68" x="608.0" y="52"><title>2026-07-04｜新聞 854、社群 5,402、討論區 300</title></rect></a><a class="chart-jump" data-scroll-target="time-2026-07-05" href="#time-2026-07-05"><rect fill="transparent" height="356" width="68" x="749.0" y="52"><title>2026-07-05｜新聞 1,396、社群 9,579、討論區 252</title></rect></a><a class="chart-jump" data-scroll-target="time-2026-07-06" href="#time-2026-07-06"><rect fill="transparent" height="356" width="68" x="890.0" y="52"><title>2026-07-06｜新聞 1,839、社群 10,023、討論區 517</title></rect></a><a class="chart-jump" data-scroll-target="time-2026-07-07" href="#time-2026-07-07"><rect fill="transparent" height="356" width="68" x="1031.0" y="52"><title>2026-07-07｜新聞 1,926、社群 12,897、討論區 1,133</title></rect></a>
+<a class="chart-jump" data-scroll-target="time-2026-06-30" href="#time-2026-06-30"><text class="tick" text-anchor="middle" x="78.0" y="402">6/30</text><text class="tick total" text-anchor="middle" x="78.0" y="420">35</text></a><a class="chart-jump" data-scroll-target="time-2026-07-01" href="#time-2026-07-01"><text class="tick" text-anchor="middle" x="219.0" y="402">7/1</text><text class="tick total" text-anchor="middle" x="219.0" y="420">587</text></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><text class="tick" text-anchor="middle" x="360.0" y="402">7/2</text><text class="tick total" text-anchor="middle" x="360.0" y="420">5,814</text></a><a class="chart-jump" data-scroll-target="time-2026-07-02" href="#time-2026-07-02"><text class="tick" text-anchor="middle" x="501.0" y="402">7/3</text><text class="tick total" text-anchor="middle" x="501.0" y="420">6,703</text></a><a class="chart-jump" data-scroll-target="time-2026-07-04" href="#time-2026-07-04"><text class="tick" text-anchor="middle" x="642.0" y="402">7/4</text><text class="tick total" text-anchor="middle" x="642.0" y="420">6,556</text></a><a class="chart-jump" data-scroll-target="time-2026-07-05" href="#time-2026-07-05"><text class="tick" text-anchor="middle" x="783.0" y="402">7/5</text><text class="tick total" text-anchor="middle" x="783.0" y="420">11,227</text></a><a class="chart-jump" data-scroll-target="time-2026-07-06" href="#time-2026-07-06"><text class="tick" text-anchor="middle" x="924.0" y="402">7/6</text><text class="tick total" text-anchor="middle" x="924.0" y="420">12,379</text></a><a class="chart-jump" data-scroll-target="time-2026-07-07" href="#time-2026-07-07"><text class="tick" text-anchor="middle" x="1065.0" y="402">7/7</text><text class="tick total" text-anchor="middle" x="1065.0" y="420">15,956</text></a>
+</svg></div>
+
+</div>
+</section>
 <section id="timeline">
-  <div class="section-title">
-    <p class="eyebrow">Timeline Matrix + Media Volume</p>
-    <h2>對照式時間軸：事件脈絡 × 各方說法 × 傳播聲量</h2>
-    <p>每個時間點同步對照事件發展、中聯油脂、中央與地方政府、南僑、福懋／福壽／泰山、下游品牌與輿論反應。</p>
-  </div>
-      <div class="explosion-head"><div><h3>整體輿情聲量走勢</h3><p>以 Excel「傳播聲量趨勢」的新聞、社群、討論區數據，按日期同步到下方事件節點；7/2–7/3節點為兩日合計。淡色面積為總聲量，三條線分別代表新聞、社群與討論區。</p></div><div class="legend"><span class="dot news"></span>新聞 <span class="dot social"></span>社群 <span class="dot forum"></span>討論區</div></div>
-      <svg class="line-chart" viewBox="0 0 1120 350" role="img" aria-label="整體輿情聲量走勢">
-        <defs><linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#b75e20" stop-opacity="0.16"/><stop offset="100%" stop-color="#b75e20" stop-opacity="0.02"/></linearGradient></defs>
-        <line x1="66" x2="1080" y1="262.0" y2="262.0" class="grid-line"/><text x="56" y="266.0" text-anchor="end" class="axis-label">0</text><line x1="66" x2="1080" y1="204.5" y2="204.5" class="grid-line"/><text x="56" y="208.5" text-anchor="end" class="axis-label">3,250</text><line x1="66" x2="1080" y1="147.0" y2="147.0" class="grid-line"/><text x="56" y="151.0" text-anchor="end" class="axis-label">6,500</text><line x1="66" x2="1080" y1="89.5" y2="89.5" class="grid-line"/><text x="56" y="93.5" text-anchor="end" class="axis-label">9,750</text><line x1="66" x2="1080" y1="32.0" y2="32.0" class="grid-line"/><text x="56" y="36.0" text-anchor="end" class="axis-label">13,000</text>
-        <path d="M 66.0 262.0 L 66.0 262.0 L 178.7 262.0 L 291.3 262.0 L 404.0 262.0 L 516.7 261.4 L 629.3 251.6 L 742.0 40.7 L 854.7 146.1 L 967.3 64.3 L 1080.0 48.9 L 1080.0 262.0 Z" fill="url(#areaFill)"/>
-        <path d="M 66.0 262.0 L 178.7 262.0 L 291.3 262.0 L 404.0 262.0 L 516.7 261.4 L 629.3 256.4 L 742.0 185.3 L 854.7 246.9 L 967.3 237.4 L 1080.0 230.2" class="volume-line news"/>
-        <path d="M 66.0 262.0 L 178.7 262.0 L 291.3 262.0 L 404.0 262.0 L 516.7 262.0 L 629.3 257.6 L 742.0 124.7 L 854.7 166.5 L 967.3 93.4 L 1080.0 85.7" class="volume-line social"/>
-        <path d="M 66.0 262.0 L 178.7 262.0 L 291.3 262.0 L 404.0 262.0 L 516.7 262.0 L 629.3 261.6 L 742.0 254.7 L 854.7 256.7 L 967.3 257.6 L 1080.0 257.1" class="volume-line forum"/>
-        <circle class="series-point news" cx="516.7" cy="261.4" r="3"><title>6/30 晚間｜新聞 33</title></circle><circle class="series-point social" cx="516.7" cy="262.0" r="3"><title>6/30 晚間｜社群 2</title></circle><circle class="series-point forum" cx="516.7" cy="262.0" r="3"><title>6/30 晚間｜討論區 0</title></circle><circle class="series-point news" cx="629.3" cy="256.4" r="3"><title>7/1｜新聞 315</title></circle><circle class="series-point social" cx="629.3" cy="257.6" r="3"><title>7/1｜社群 247</title></circle><circle class="series-point forum" cx="629.3" cy="261.6" r="3"><title>7/1｜討論區 25</title></circle><circle class="series-point news" cx="742.0" cy="185.3" r="4"><title>7/2–7/3｜新聞 4,335</title></circle><circle class="series-point social" cx="742.0" cy="124.7" r="4"><title>7/2–7/3｜社群 7,760</title></circle><circle class="series-point forum" cx="742.0" cy="254.7" r="3"><title>7/2–7/3｜討論區 413</title></circle><circle class="series-point news" cx="854.7" cy="246.9" r="3"><title>7/4｜新聞 853</title></circle><circle class="series-point social" cx="854.7" cy="166.5" r="4"><title>7/4｜社群 5,397</title></circle><circle class="series-point forum" cx="854.7" cy="256.7" r="3"><title>7/4｜討論區 300</title></circle><circle class="series-point news" cx="967.3" cy="237.4" r="3"><title>7/5｜新聞 1,391</title></circle><circle class="series-point social" cx="967.3" cy="93.4" r="4"><title>7/5｜社群 9,532</title></circle><circle class="series-point forum" cx="967.3" cy="257.6" r="3"><title>7/5｜討論區 251</title></circle><circle class="series-point news" cx="1080.0" cy="230.2" r="3"><title>7/6｜新聞 1,799</title></circle><circle class="series-point social" cx="1080.0" cy="85.7" r="4"><title>7/6｜社群 9,964</title></circle><circle class="series-point forum" cx="1080.0" cy="257.1" r="3"><title>7/6｜討論區 279</title></circle>
-        <g class="point cool"><circle cx="66.0" cy="262.0" r="7"/><text x="66.0" y="249.0" text-anchor="middle" class="value-label">0</text><title>4/4｜問題批次製造。｜總聲量 0｜新聞 0｜社群 0｜討論區 0</title></g><g class="point cool"><circle cx="178.7" cy="262.0" r="7"/><text x="178.7" y="249.0" text-anchor="middle" class="value-label">0</text><title>4/8–4/10｜第一層流向形成。｜總聲量 0｜新聞 0｜社群 0｜討論區 0</title></g><g class="point cool"><circle cx="291.3" cy="262.0" r="7"/><text x="291.3" y="249.0" text-anchor="middle" class="value-label">0</text><title>6/11｜南僑疑似自主檢驗發現異常。｜總聲量 0｜新聞 0｜社群 0｜討論區 0</title></g><g class="point cool"><circle cx="404.0" cy="262.0" r="7"/><text x="404.0" y="249.0" text-anchor="middle" class="value-label">0</text><title>6/25、6/30｜中聯再驗仍超標。｜總聲量 0｜新聞 0｜社群 0｜討論區 0</title></g><g class="point cool"><circle cx="516.7" cy="261.4" r="7"/><text x="516.7" y="248.4" text-anchor="middle" class="value-label">35</text><title>6/30 晚間｜主管機關接獲通報。｜總聲量 35｜新聞 33｜社群 2｜討論區 0</title></g><g class="point cool"><circle cx="629.3" cy="251.6" r="7"/><text x="629.3" y="238.6" text-anchor="middle" class="value-label">587</text><title>7/1｜中央與台中市聯合稽查。｜總聲量 587｜新聞 315｜社群 247｜討論區 25</title></g><g class="point hot"><circle cx="742.0" cy="40.7" r="7"/><text x="742.0" y="27.7" text-anchor="middle" class="value-label">12,508</text><title>7/2–7/3｜第一層產品與部分下游資訊擴大。｜總聲量 12,508｜新聞 4,335｜社群 7,760｜討論區 413</title></g><g class="point warm"><circle cx="854.7" cy="146.1" r="7"/><text x="854.7" y="133.1" text-anchor="middle" class="value-label">6,550</text><title>7/4｜第二層下游擴大處置。｜總聲量 6,550｜新聞 853｜社群 5,397｜討論區 300</title></g><g class="point hot"><circle cx="967.3" cy="64.3" r="7"/><text x="967.3" y="51.3" text-anchor="middle" class="value-label">11,174</text><title>7/5｜食藥署公布257家受影響業者。｜總聲量 11,174｜新聞 1,391｜社群 9,532｜討論區 251</title></g><g class="point hot"><circle cx="1080.0" cy="48.9" r="7"/><text x="1080.0" y="35.9" text-anchor="middle" class="value-label">12,042</text><title>7/6｜輿論與政治層級升高。｜總聲量 12,042｜新聞 1,799｜社群 9,964｜討論區 279</title></g>
-        <text x="66.0" y="288" text-anchor="middle" class="x-label">4/4</text><text x="66.0" y="309" text-anchor="middle" class="x-sub">問題批次製造。</text><text x="178.7" y="288" text-anchor="middle" class="x-label">4/8–4/10</text><text x="178.7" y="309" text-anchor="middle" class="x-sub">第一層流向形成。</text><text x="291.3" y="288" text-anchor="middle" class="x-label">6/11</text><text x="291.3" y="309" text-anchor="middle" class="x-sub">南僑疑似自主檢驗發…</text><text x="404.0" y="288" text-anchor="middle" class="x-label">6/25、6/30</text><text x="404.0" y="309" text-anchor="middle" class="x-sub">中聯再驗仍超標。</text><text x="516.7" y="288" text-anchor="middle" class="x-label">6/30 晚間</text><text x="516.7" y="309" text-anchor="middle" class="x-sub">主管機關接獲通報。</text><text x="629.3" y="288" text-anchor="middle" class="x-label">7/1</text><text x="629.3" y="309" text-anchor="middle" class="x-sub">中央與台中市聯合稽…</text><text x="742.0" y="288" text-anchor="middle" class="x-label">7/2–7/3</text><text x="742.0" y="309" text-anchor="middle" class="x-sub">第一層產品與部分下…</text><text x="854.7" y="288" text-anchor="middle" class="x-label">7/4</text><text x="854.7" y="309" text-anchor="middle" class="x-sub">第二層下游擴大處置…</text><text x="967.3" y="288" text-anchor="middle" class="x-label">7/5</text><text x="967.3" y="309" text-anchor="middle" class="x-sub">食藥署公布257家…</text><text x="1080.0" y="288" text-anchor="middle" class="x-label">7/6</text><text x="1080.0" y="309" text-anchor="middle" class="x-sub">輿論與政治層級升高…</text>
-      </svg>
-    </div>
-  <div class="timeline"><article class="timeline-card burst-none" id="t1" data-date="2026/4/4">
-      <div class="time-marker"><span>01</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/4/4：問題批次製造</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">問題批次製造。</div><p>中聯油脂批號315-1150404大豆沙拉油製造，後續檢出苯駢芘8.1 μg/kg，超過2.0 μg/kg限量。</p></div></section>
-          <section class="volume-visible"><div class="volume-empty"><span>公開聲量</span><strong>尚未形成爆量</strong><small>原檔無對應聲量數據</small></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>後續聲明主軸為品管異常處理與致歉；媒體引述稱除異常批次外，其餘批次符合法規。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>食藥署7/1公告確認批號、製造日期、有效日期與檢出值。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>此時未見公開說法。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>此時尚未公開回應。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>事件尚未公開，無明顯輿論。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">食藥署7/1新聞稿</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-none" id="t2" data-date="2026/4/8–4/10">
-      <div class="time-marker"><span>02</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/4/8–4/10：第一層流向形成</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">第一層流向形成。</div><p>問題油約1,300公噸流向福懋約588公噸、福壽約421公噸、泰山約291公噸。</p></div></section>
-          <section class="volume-visible"><div class="volume-empty"><span>公開聲量</span><strong>尚未形成爆量</strong><small>原檔無對應聲量數據</small></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>後續說法強調接獲第三方檢驗異常後通知三家停止出貨並通報。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>食藥署與台中市後續均以此流向作為第一波追查與下架基礎。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>南僑不是官方最初公布的第一層流向業者，而是後續下游鏈中的關鍵節點。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>福懋、福壽、泰山後續均依流向啟動下架、回收、退貨或預防性回收。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>後續輿論將三家視為受波及品牌，但仍要求承擔消費者端品牌責任。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">食藥署7/1新聞稿</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-none" id="t3" data-date="2026/6/11">
-      <div class="time-marker"><span>03</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/6/11：南僑疑似自主檢驗發現異常</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">南僑疑似自主檢驗發現異常。</div><p>媒體引述主管機關說法，南僑自行檢驗發現苯駢芘疑似超標並通知中聯。</p></div></section>
-          <section class="volume-visible"><div class="volume-empty"><span>公開聲量</span><strong>尚未形成爆量</strong><small>原檔無對應聲量數據</small></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>這段後續成為中聯最需說明的缺口：收到何種資料、何時啟動異常程序、是否通知其他下游。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>台中市衛生局對媒體說明此節點，並表示後續會查核通報時程。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>被報導定位為下游自主檢驗發現異常的關鍵節點；輿論多視其為第二道把關者。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>此時未見三家就南僑檢出節點發表公開說法。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>後續輿論把此日視為「若6/11已知，為何6/30才通報」的核心疑點。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://udn.com/news/story/124940/9608151" target="_blank" rel="noopener noreferrer">聯合報：南僑與通報時序</a><a class="source-btn" href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" target="_blank" rel="noopener noreferrer">華視新聞</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-none" id="t4" data-date="2026/6/25、6/30">
-      <div class="time-marker"><span>04</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/6/25、6/30：中聯再驗仍超標</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">中聯再驗仍超標。</div><p>媒體引述台中市衛生局說法，中聯於6/25與6/30再驗結果仍超標。</p></div></section>
-          <section class="volume-visible"><div class="volume-empty"><span>公開聲量</span><strong>尚未形成爆量</strong><small>原檔無對應聲量數據</small></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>中聯對外主要說法偏向6/29接獲第三方檢驗報告、6/30通知與通報；較少完整交代6/11到6/30內部處理。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>地方政府表示若查有延遲通報將依法重懲；食藥署後續要求擴大檢驗留樣與製程查核。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>南僑的早期檢出讓中聯複驗與通報落差被放大檢視。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>尚未進入集中對外回應期；後續接獲通報後開始下架回收。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>這段成為網友與評論者質疑中聯「延遲通報／資訊不透明」的主要依據。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://udn.com/news/story/124940/9608151" target="_blank" rel="noopener noreferrer">聯合報：通報時序</a><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" target="_blank" rel="noopener noreferrer">食藥署7/4新聞稿</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-low" id="t5" data-date="2026/6/30 晚間">
-      <div class="time-marker"><span>05</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/6/30 晚間：主管機關接獲通報</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">主管機關接獲通報。</div><p>食藥署與地方政府接獲通報，啟動查核、流向追蹤與下架回收。</p></div></section>
-          <section class="volume-visible"><div class="volume-box"><div class="volume-top"><span>對應聲量 6/30</span><strong>35</strong></div><div class="stackbar"><span class="seg news" style="width:94.29%" title="新聞 33"></span><span class="seg social" style="width:5.71%" title="社群 2"></span><span class="seg forum" style="width:1.00%" title="討論區 0"></span></div><div class="metric-row"><span class="metric-chip news">新聞<b>33</b></span><span class="metric-chip social">社群<b>2</b></span><span class="metric-chip forum">討論區<b>0</b></span></div></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>媒體引述中聯稱6/30通知泰山、福壽、福懋停止出貨，並完成主管機關通報。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>食藥署表示6/30晚間及7/1晚間接獲業者通報；台中市表示6/30獲報後啟動聯合稽查。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>南僑作為下游檢出者的角色開始在後續報導被揭露。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>福懋公告稱6/30接獲中聯通報，相關成品停止出貨、盤查流向、下架回收並通報主管機關；泰山也稱6/30接獲中聯通報後啟動食安應變。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>事件開始進入公共議題，消費者需求集中在批號、下架與退貨資訊。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=376" target="_blank" rel="noopener noreferrer">福懋6/30公告</a><a class="source-btn" href="https://www.taisun.com.tw/30718/" target="_blank" rel="noopener noreferrer">泰山官方聲明</a><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">食藥署7/1新聞稿</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-low" id="t6" data-date="2026/7/1">
-      <div class="time-marker"><span>06</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/7/1：中央與台中市聯合稽查</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">中央與台中市聯合稽查。</div><p>中聯相關產線被要求停工、停止出貨，第一層下游油品啟動下架回收。</p></div></section>
-          <section class="volume-visible"><div class="volume-box"><div class="volume-top"><span>對應聲量 7/1</span><strong>587</strong></div><div class="stackbar"><span class="seg news" style="width:53.66%" title="新聞 315"></span><span class="seg social" style="width:42.08%" title="社群 247"></span><span class="seg forum" style="width:4.26%" title="討論區 25"></span></div><div class="metric-row"><span class="metric-chip news">新聞<b>315</b></span><span class="metric-chip social">社群<b>247</b></span><span class="metric-chip forum">討論區<b>25</b></span></div></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>官網發布致歉聲明；後續稱將配合主管機關調查，並加強原料與每批次委外檢驗。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>食藥署公布批號、檢出值、法規限量與第一層流向；台中市要求中聯停工停出貨、追查流向。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>未見南僑在此日發布大型公開聲明；其角色主要由政府與媒體轉述。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>開始進入商品下架、回收、產品批號整理與消費者退貨應變。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>輿論初期聚焦三大油品品牌與家中油品是否可用。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://www.cuoc.com.tw/tw/news/?aid=30&amp;method=detail" target="_blank" rel="noopener noreferrer">中聯聲明</a><a class="source-btn" href="https://www.fds.taichung.gov.tw/1210187/1210197/1210198/nodeCp?nodeId=3311815" target="_blank" rel="noopener noreferrer">台中市7/1公告</a><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">食藥署7/1新聞稿</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-high" id="t7" data-date="2026/7/2–7/3">
-      <div class="time-marker"><span>07</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/7/2–7/3：第一層產品與部分下游資訊擴大</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">第一層產品與部分下游資訊擴大。</div><p>第一層受影響油品下架期限到來；產品批號與下游業者數量陸續增加。</p></div></section>
-          <section class="volume-visible"><div class="volume-box"><div class="volume-top"><span>對應聲量 7/2、7/3</span><strong>12,508</strong></div><div class="stackbar"><span class="seg news" style="width:34.66%" title="新聞 4,335"></span><span class="seg social" style="width:62.04%" title="社群 7,760"></span><span class="seg forum" style="width:3.30%" title="討論區 413"></span></div><div class="metric-row"><span class="metric-chip news">新聞<b>4,335</b></span><span class="metric-chip social">社群<b>7,760</b></span><span class="metric-chip forum">討論區<b>413</b></span></div></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>媒體整理中聯說法：將啟動每批次油品委外檢驗，並加嚴原料驗收、自主檢驗頻率。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>食藥署表示受影響油品擴大為18品項；台中市公布批號、下游家數與校園供餐受影響情形。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>華視等報導將南僑定位為自行送驗發現異常、回溯上游中聯的關鍵者。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>福懋發布回收退款說明；福壽公布退貨辦法並稱將向中聯求償；泰山公布退貨批號與擴大預防性下架。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>網路開始整理「哪些油不能用」「怎麼退貨」；PTT與媒體討論南僑是否是揪出問題的功臣。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634410" target="_blank" rel="noopener noreferrer">食藥署7/3新聞稿</a><a class="source-btn" href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=378" target="_blank" rel="noopener noreferrer">福懋回收退款</a><a class="source-btn" href="https://www.taisun.com.tw/260702/" target="_blank" rel="noopener noreferrer">泰山退貨說明</a><a class="source-btn" href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" target="_blank" rel="noopener noreferrer">華視新聞</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-mid" id="t8" data-date="2026/7/4">
-      <div class="time-marker"><span>08</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/7/4：第二層下游擴大處置</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">第二層下游擴大處置。</div><p>食藥署專家會議後，要求原態油品、調合油與使用比例20%以上加工食品於7/6 24:00前預防性下架；未達20%者須揭露。</p></div></section>
-          <section class="volume-visible"><div class="volume-box"><div class="volume-top"><span>對應聲量 7/4</span><strong>6,550</strong></div><div class="stackbar"><span class="seg news" style="width:13.02%" title="新聞 853"></span><span class="seg social" style="width:82.40%" title="社群 5,397"></span><span class="seg forum" style="width:4.58%" title="討論區 300"></span></div><div class="metric-row"><span class="metric-chip news">新聞<b>853</b></span><span class="metric-chip social">社群<b>5,397</b></span><span class="metric-chip forum">討論區<b>300</b></span></div></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>主管機關要求中聯擴大檢驗4月起所有桶槽留樣，並強化原料與製程查核點。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>食藥署以專家會議結論擴大第二層處置，並訂出20%門檻與資訊揭露要求。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>其自主檢驗角色被評論者用來凸顯制度不能只依賴個別下游把關。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>持續回收、退貨、提供批號資訊，並配合地方政府追蹤下游。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>輿論焦點由油品轉向加工食品：泡麵、飯糰、沙拉、餐飲醬料、冷凍食品是否受影響。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" target="_blank" rel="noopener noreferrer">食藥署7/4新聞稿</a><a class="source-btn" href="https://www.businesstoday.com.tw/article/category/183030/post/202607040003/" target="_blank" rel="noopener noreferrer">今周刊下游整理</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-high" id="t9" data-date="2026/7/5">
-      <div class="time-marker"><span>09</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/7/5：食藥署公布257家受影響業者</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">食藥署公布257家受影響業者。</div><p>第二層去重後受影響業者名單公開，事件擴大為跨品牌、跨通路、跨餐飲供應鏈危機。</p></div></section>
-          <section class="volume-visible"><div class="volume-box"><div class="volume-top"><span>對應聲量 7/5</span><strong>11,174</strong></div><div class="stackbar"><span class="seg news" style="width:12.45%" title="新聞 1,391"></span><span class="seg social" style="width:85.31%" title="社群 9,532"></span><span class="seg forum" style="width:2.25%" title="討論區 251"></span></div><div class="metric-row"><span class="metric-chip news">新聞<b>1,391</b></span><span class="metric-chip social">社群<b>9,532</b></span><span class="metric-chip forum">討論區<b>251</b></span></div></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>台中市二度稽查中聯，查核原料、製程、品管與通報流程；媒體報導中聯表示盼衛生單位、專家與檢調查明原因。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>食藥署公布257家名單；台中市表示不排除與巴西黃豆原料含水量較高或烘烤過程污染有關，但仍待確認。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>南僑被正面看待，但也讓外界持續追問中聯收到南僑通知後的處理落差。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>持續被視為第一層受波及品牌，需要承擔批號揭露、退貨與消費者溝通責任。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>大型品牌如味王、聯華、桂冠、路易莎、晶華、王品、金色三麥等被要求說清楚涉及品項、使用比例、下架與退貨。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634418" target="_blank" rel="noopener noreferrer">食藥署7/5新聞稿</a><a class="source-btn" href="https://udn.com/news/story/124940/9608250" target="_blank" rel="noopener noreferrer">聯合報：台中市稽查</a><a class="source-btn" href="https://www.nownews.com/news/6853042" target="_blank" rel="noopener noreferrer">NOWnews下游整理</a></div></div>
-        </div>
-      </div>
-    </article><article class="timeline-card burst-high" id="t10" data-date="2026/7/6">
-      <div class="time-marker"><span>10</span></div>
-      <div class="timeline-content">
-        <header class="timeline-head">
-          <div><p class="eyebrow">時間點</p><h3>2026/7/6：輿論與政治層級升高</h3></div>
-          <button class="toggle" aria-expanded="true">收合各方說法</button>
-        </header>
-        <div class="always-visible">
-          <section class="event-context"><h4>事件脈絡</h4><div><div class="mini-label">輿論與政治層級升高。</div><p>第二層下架／揭露期限日，事件從食品安全擴大到政府治理、企業通報責任與供應鏈透明。</p></div></section>
-          <section class="volume-visible"><div class="volume-box"><div class="volume-top"><span>對應聲量 7/6</span><strong>12,042</strong></div><div class="stackbar"><span class="seg news" style="width:14.94%" title="新聞 1,799"></span><span class="seg social" style="width:82.74%" title="社群 9,964"></span><span class="seg forum" style="width:2.32%" title="討論區 279"></span></div><div class="metric-row"><span class="metric-chip news">新聞<b>1,799</b></span><span class="metric-chip social">社群<b>9,964</b></span><span class="metric-chip forum">討論區<b>279</b></span></div></div></section>
-        </div>
-        <div class="collapsible">
-          <div class="voice-grid"><section class="voice-card zhonglian">
-      <h4>中聯油脂說法</h4>
-      <div class="voice-text"><div class="mini-label">中聯</div><p>輿論仍要求交代6/11至6/30的完整時序；「延遲通報」成最大聲譽風險。</p></div>
-    </section><section class="voice-card gov">
-      <h4>中央／地方政府說法</h4>
-      <div class="voice-text"><div class="mini-label">政府</div><p>總統與行政層級要求停產、下架、預防性下架與究責；食藥署要求地方彙整回報產品資訊。</p></div>
-    </section><section class="voice-card nanqiao">
-      <h4>南僑角色／說法</h4>
-      <div class="voice-text"><div class="mini-label">南僑</div><p>網路觀感相對正面，被視為本案中發揮第二道食安把關的角色。</p></div>
-    </section><section class="voice-card brands">
-      <h4>福懋、福壽、泰山說法</h4>
-      <div class="voice-text"><div class="mini-label">三家油廠</div><p>品牌壓力集中在退貨便利性、批號透明、檢驗合格再上市。</p></div>
-    </section><section class="voice-card downstream">
-      <h4>257家下游／輿論與KOL</h4>
-      <div class="voice-text"><div class="mini-label">下游／輿論</div><p>KOL、醫師與媒體評論分別聚焦健康風險、制度失靈、南僑把關與消費者退貨；下游品牌若未清楚揭露，容易被納入不信任名單。</p></div>
-    </section></div>
-          <div class="sources-inline"><strong>主要連結</strong><div><a class="source-btn" href="https://news.pts.org.tw/article/816241" target="_blank" rel="noopener noreferrer">公視：7/6期限</a><a class="source-btn" href="https://udn.com/news/story/11091/9609221" target="_blank" rel="noopener noreferrer">聯合報重磅快評</a><a class="source-btn" href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html" target="_blank" rel="noopener noreferrer">毒物專家說法</a></div></div>
-        </div>
-      </div>
-    </article></div>
+<div class="section-title">
+<div class="eyebrow">Timeline</div>
+<h2>對照式時間軸：事件脈絡 × 各方說法</h2>
+<p>點擊右方展開按鍵，可看到更多元完整的說法與新聞連結。</p>
+</div>
+<div class="timeline-stack">
+<details class="timeline-card volume-none" id="time-2026-04-04">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/4/4：問題批次製造</div>
+<div class="event-preview">中聯油脂批號315-1150404大豆沙拉油製造，後續檢出苯駢芘8.1 μg/kg，超過2.0 μg/kg限量。</div>
+<div class="voice-row"></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>問題批次製造。<br/>中聯油脂批號315-1150404大豆沙拉油製造，後續檢出苯駢芘8.1 μg/kg，超過2.0 μg/kg限量。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>後續聲明主軸為品管異常處理與致歉；媒體引述稱除異常批次外，其餘批次符合法規。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>食藥署7/1公告確認批號、製造日期、有效日期與檢出值。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>此時未見公開說法。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>此時尚未公開回應。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>事件尚未公開，無明顯輿論。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">食藥署7/1新聞稿</a></div>
+</details>
+<details class="timeline-card volume-none" id="time-2026-04-08">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/4/8–4/10：第一層流向形成</div>
+<div class="event-preview">問題油約1,300公噸流向福懋約588公噸、福壽約421公噸、泰山約291公噸。</div>
+<div class="voice-row"></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>第一層流向形成。<br/>問題油約1,300公噸流向福懋約588公噸、福壽約421公噸、泰山約291公噸。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>後續說法強調接獲第三方檢驗異常後通知三家停止出貨並通報。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>食藥署與台中市後續均以此流向作為第一波追查與下架基礎。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>南僑不是官方最初公布的第一層流向業者，而是後續下游鏈中的關鍵節點。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>福懋、福壽、泰山後續均依流向啟動下架、回收、退貨或預防性回收。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>後續輿論將三家視為受波及品牌，但仍要求承擔消費者端品牌責任。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">食藥署7/1新聞稿</a></div>
+</details>
+<details class="timeline-card volume-none" id="time-2026-06-11">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/6/11：南僑疑似自主檢驗發現異常</div>
+<div class="event-preview">媒體引述主管機關說法，南僑自行檢驗發現苯駢芘疑似超標並通知中聯。</div>
+<div class="voice-row"></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>南僑疑似自主檢驗發現異常。<br/>媒體引述主管機關說法，南僑自行檢驗發現苯駢芘疑似超標並通知中聯。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>這段後續成為中聯最需說明的缺口：收到何種資料、何時啟動異常程序、是否通知其他下游。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>台中市衛生局對媒體說明此節點，並表示後續會查核通報時程。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>被報導定位為下游自主檢驗發現異常的關鍵節點；輿論多視其為第二道把關者。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>此時未見三家就南僑檢出節點發表公開說法。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>後續輿論把此日視為「若6/11已知，為何6/30才通報」的核心疑點。</p></div>
+</div>
+<div class="links-row"><a href="https://udn.com/news/story/124940/9608151" rel="noopener noreferrer" target="_blank">聯合報：南僑與通報時序</a><a href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" rel="noopener noreferrer" target="_blank">華視新聞</a></div>
+</details>
+<details class="timeline-card volume-low" data-volume="35" id="time-2026-06-25">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/6/25、6/30：中聯再驗仍超標</div>
+<div class="event-preview">媒體引述台中市衛生局說法，中聯於6/25與6/30再驗結果仍超標。</div>
+<div class="voice-row"><span class="voice-pill"><b>6/30</b> 新聞33｜社群2｜討論區0</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>中聯再驗仍超標。<br/>媒體引述台中市衛生局說法，中聯於6/25與6/30再驗結果仍超標。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>中聯對外主要說法偏向6/29接獲第三方檢驗報告、6/30通知與通報；較少完整交代6/11到6/30內部處理。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>地方政府表示若查有延遲通報將依法重懲；食藥署後續要求擴大檢驗留樣與製程查核。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>南僑的早期檢出讓中聯複驗與通報落差被放大檢視。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>尚未進入集中對外回應期；後續接獲通報後開始下架回收。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>這段成為網友與評論者質疑中聯「延遲通報／資訊不透明」的主要依據。</p></div>
+</div>
+<div class="links-row"><a href="https://udn.com/news/story/124940/9608151" rel="noopener noreferrer" target="_blank">聯合報：通報時序</a><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" rel="noopener noreferrer" target="_blank">食藥署7/4新聞稿</a></div>
+</details>
+<details class="timeline-card volume-low" data-volume="35" id="time-2026-06-30">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/6/30 晚間：主管機關接獲通報</div>
+<div class="event-preview">食藥署與地方政府接獲通報，啟動查核、流向追蹤與下架回收。</div>
+<div class="voice-row"><span class="voice-pill"><b>6/30</b> 新聞33｜社群2｜討論區0</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>主管機關接獲通報。<br/>食藥署與地方政府接獲通報，啟動查核、流向追蹤與下架回收。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>媒體引述中聯稱6/30通知泰山、福壽、福懋停止出貨，並完成主管機關通報。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>食藥署表示6/30晚間及7/1晚間接獲業者通報；台中市表示6/30獲報後啟動聯合稽查。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>南僑作為下游檢出者的角色開始在後續報導被揭露。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>福懋公告稱6/30接獲中聯通報，相關成品停止出貨、盤查流向、下架回收並通報主管機關；泰山也稱6/30接獲中聯通報後啟動食安應變。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>事件開始進入公共議題，消費者需求集中在批號、下架與退貨資訊。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=376" rel="noopener noreferrer" target="_blank">福懋6/30公告</a><a href="https://www.taisun.com.tw/30718/" rel="noopener noreferrer" target="_blank">泰山官方聲明</a><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">食藥署7/1新聞稿</a></div>
+</details>
+<details class="timeline-card volume-low" data-volume="587" id="time-2026-07-01">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/7/1：中央與台中市聯合稽查</div>
+<div class="event-preview">中聯相關產線被要求停工、停止出貨，第一層下游油品啟動下架回收。</div>
+<div class="voice-row"><span class="voice-pill"><b>7/1</b> 新聞315｜社群247｜討論區25</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>中央與台中市聯合稽查。<br/>中聯相關產線被要求停工、停止出貨，第一層下游油品啟動下架回收。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>官網發布致歉聲明；後續稱將配合主管機關調查，並加強原料與每批次委外檢驗。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>食藥署公布批號、檢出值、法規限量與第一層流向；台中市要求中聯停工停出貨、追查流向。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>未見南僑在此日發布大型公開聲明；其角色主要由政府與媒體轉述。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>開始進入商品下架、回收、產品批號整理與消費者退貨應變。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>輿論初期聚焦三大油品品牌與家中油品是否可用。</p></div>
+</div>
+<div class="links-row"><a href="https://www.cuoc.com.tw/tw/news/?aid=30&amp;method=detail" rel="noopener noreferrer" target="_blank">中聯聲明</a><a href="https://www.fds.taichung.gov.tw/1210187/1210197/1210198/nodeCp?nodeId=3311815" rel="noopener noreferrer" target="_blank">台中市7/1公告</a><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">食藥署7/1新聞稿</a></div>
+</details>
+<details class="timeline-card volume-peak" data-volume="12517" id="time-2026-07-02">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/7/2–7/3：第一層產品與部分下游資訊擴大</div>
+<div class="event-preview">第一層受影響油品下架期限到來；產品批號與下游業者數量陸續增加。</div>
+<div class="voice-row"><span class="voice-pill"><b>7/2</b> 新聞2,245｜社群3,434｜討論區135</span><span class="voice-pill"><b>7/3</b> 新聞2,087｜社群4,338｜討論區278</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>第一層產品與部分下游資訊擴大。<br/>第一層受影響油品下架期限到來；產品批號與下游業者數量陸續增加。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>媒體整理中聯說法：將啟動每批次油品委外檢驗，並加嚴原料驗收、自主檢驗頻率。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>食藥署表示受影響油品擴大為18品項；台中市公布批號、下游家數與校園供餐受影響情形。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>華視等報導將南僑定位為自行送驗發現異常、回溯上游中聯的關鍵者。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>福懋發布回收退款說明；福壽公布退貨辦法並稱將向中聯求償；泰山公布退貨批號與擴大預防性下架。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>網路開始整理「哪些油不能用」「怎麼退貨」；PTT與媒體討論南僑是否是揪出問題的功臣。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634410" rel="noopener noreferrer" target="_blank">食藥署7/3新聞稿</a><a href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=378" rel="noopener noreferrer" target="_blank">福懋回收退款</a><a href="https://www.taisun.com.tw/260702/" rel="noopener noreferrer" target="_blank">泰山退貨說明</a><a href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" rel="noopener noreferrer" target="_blank">華視新聞</a></div>
+</details>
+<details class="timeline-card volume-mid" data-volume="6556" id="time-2026-07-04">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/7/4：第二層下游擴大處置</div>
+<div class="event-preview">食藥署專家會議後，要求原態油品、調合油與使用比例20%以上加工食品於7/6 24:00前預防性下架；未達20%者須揭露。</div>
+<div class="voice-row"><span class="voice-pill"><b>7/4</b> 新聞854｜社群5,402｜討論區300</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>第二層下游擴大處置。<br/>食藥署專家會議後，要求原態油品、調合油與使用比例20%以上加工食品於7/6 24:00前預防性下架；未達20%者須揭露。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>主管機關要求中聯擴大檢驗4月起所有桶槽留樣，並強化原料與製程查核點。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>食藥署以專家會議結論擴大第二層處置，並訂出20%門檻與資訊揭露要求。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>其自主檢驗角色被評論者用來凸顯制度不能只依賴個別下游把關。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>持續回收、退貨、提供批號資訊，並配合地方政府追蹤下游。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>輿論焦點由油品轉向加工食品：泡麵、飯糰、沙拉、餐飲醬料、冷凍食品是否受影響。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" rel="noopener noreferrer" target="_blank">食藥署7/4新聞稿</a><a href="https://www.businesstoday.com.tw/article/category/183030/post/202607040003/" rel="noopener noreferrer" target="_blank">今周刊下游整理</a></div>
+</details>
+<details class="timeline-card volume-high" data-volume="11227" id="time-2026-07-05">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/7/5：食藥署公布257家受影響業者</div>
+<div class="event-preview">第二層去重後受影響業者名單公開，事件擴大為跨品牌、跨通路、跨餐飲供應鏈危機。</div>
+<div class="voice-row"><span class="voice-pill"><b>7/5</b> 新聞1,396｜社群9,579｜討論區252</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>食藥署公布257家受影響業者。<br/>第二層去重後受影響業者名單公開，事件擴大為跨品牌、跨通路、跨餐飲供應鏈危機。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>台中市二度稽查中聯，查核原料、製程、品管與通報流程；媒體報導中聯表示盼衛生單位、專家與檢調查明原因。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>食藥署公布257家名單；台中市表示不排除與巴西黃豆原料含水量較高或烘烤過程污染有關，但仍待確認。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>南僑被正面看待，但也讓外界持續追問中聯收到南僑通知後的處理落差。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>持續被視為第一層受波及品牌，需要承擔批號揭露、退貨與消費者溝通責任。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>大型品牌如味王、聯華、桂冠、路易莎、晶華、王品、金色三麥等被要求說清楚涉及品項、使用比例、下架與退貨。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634418" rel="noopener noreferrer" target="_blank">食藥署7/5新聞稿</a><a href="https://udn.com/news/story/124940/9608250" rel="noopener noreferrer" target="_blank">聯合報：台中市稽查</a><a href="https://www.nownews.com/news/6853042" rel="noopener noreferrer" target="_blank">NOWnews下游整理</a></div>
+</details>
+<details class="timeline-card volume-peak" data-volume="12379" id="time-2026-07-06">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/7/6：輿論與政治層級升高</div>
+<div class="event-preview">第二層下架／揭露期限日，事件從食品安全擴大到政府治理、企業通報責任與供應鏈透明。</div>
+<div class="voice-row"><span class="voice-pill"><b>7/6</b> 新聞1,839｜社群10,023｜討論區517</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>輿論與政治層級升高。<br/>第二層下架／揭露期限日，事件從食品安全擴大到政府治理、企業通報責任與供應鏈透明。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>輿論仍要求交代6/11至6/30的完整時序；「延遲通報」成最大聲譽風險。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>總統與行政層級要求停產、下架、預防性下架與究責；食藥署要求地方彙整回報產品資訊。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>網路觀感相對正面，被視為本案中發揮第二道食安把關的角色。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>三家油廠<br/>品牌壓力集中在退貨便利性、批號透明、檢驗合格再上市。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>KOL、醫師與媒體評論分別聚焦健康風險、制度失靈、南僑把關與消費者退貨；下游品牌若未清楚揭露，容易被納入不信任名單。</p></div>
+</div>
+<div class="links-row"><a href="https://news.pts.org.tw/article/816241" rel="noopener noreferrer" target="_blank">公視：7/6期限</a><a href="https://udn.com/news/story/11091/9609221" rel="noopener noreferrer" target="_blank">聯合報重磅快評</a><a href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html" rel="noopener noreferrer" target="_blank">毒物專家說法</a></div>
+</details>
+<details class="timeline-card volume-peak" data-volume="15956" id="time-2026-07-07">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/7/7：產品明細與裁罰同步升高</div>
+<div class="event-preview">食藥署公布360家受影響業者、232項產品明細；截至7/7下午2時，中聯大豆沙拉油及分裝品18項產品30批號已回收43.278噸，另有12項原型油、45項含量20%以上產品已完成預防性下架，175項未達20%產品原列自主揭露。</div>
+<div class="voice-row"><span class="voice-pill"><b>7/7</b> 新聞1,926｜社群12,897｜討論區1,133</span></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>產品明細與裁罰同步升高。<br/>食藥署公布360家受影響業者、232項產品明細；截至7/7下午2時，中聯大豆沙拉油及分裝品18項產品30批號已回收43.278噸，另有12項原型油、45項含量20%以上產品已完成預防性下架，175項未達20%產品原列自主揭露。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>衛福部認定中聯延遲通報，且油品追查過程仍有不實現象，依食安法開罰1億6520萬元，為中央開罰史上最高金額。中聯的危機焦點從製程異常轉為延遲通報、追查不實與法律責任。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>中央公布232項產品並採滾動揭露，要求地方政府持續後市場查核。台中市對中聯、福壽、福懋各罰300萬元；彰化縣對泰山罰600萬元；台北市對南僑罰300萬元。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>角色出現轉折：南僑仍是最早檢出異常的關鍵下游，但台北市衛生局認定南僑6/10已通知上游福壽原料異常，卻未依法通報衛生局，因此開罰300萬元。另南僑7項產品中有2項因使用比例達20%以上而全面下架回收。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>福懋、福壽、泰山<br/>福懋、福壽與中聯同屬台中市裁罰範圍，各遭裁處300萬元。彰化縣指出泰山6/15在中聯品保會議已知問題油訊息，未即時通報且7/1稽查時未完整說明，裁罰600萬元。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>輿論從「20%門檻合理性」轉向「所有產品都該先下架」。媒體報導指出原本未達20%的175項產品也被要求預防性下架，待提出檢驗合格或安全證明後才能恢復販售。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634440" rel="noopener noreferrer" target="_blank">食藥署7/7產品明細</a><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634443" rel="noopener noreferrer" target="_blank">食藥署7/7擴大下架</a><a href="https://news.pts.org.tw/article/816445" rel="noopener noreferrer" target="_blank">公視裁罰報導</a><a href="https://www.cna.com.tw/news/aloc/202607070129.aspx" rel="noopener noreferrer" target="_blank">中央社泰山裁罰</a></div>
+</details>
+<details class="timeline-card volume-none" id="time-2026-07-08">
+<summary>
+<div class="summary-main">
+<div class="date-title">2026/7/8：全面預防性下架期限日</div>
+<div class="event-preview">食藥署7/7宣布政策加嚴，凡使用受影響油品之產品，不論使用比例高低，均應先行預防性下架，並要求地方政府衛生局督導業者於7/8 24:00前完成下架作業。</div>
+<div class="voice-row"></div>
+</div>
+<span class="open-indicator">展開</span>
+</summary>
+<div class="timeline-grid">
+<div class="statement"><h4>事件脈絡</h4><p>全面預防性下架期限日。<br/>食藥署7/7宣布政策加嚴，凡使用受影響油品之產品，不論使用比例高低，均應先行預防性下架，並要求地方政府衛生局督導業者於7/8 24:00前完成下架作業。</p></div>
+<div class="statement"><h4>中聯油脂說法</h4><p>中聯<br/>產品恢復流通須提出檢驗合格報告或其他足以證明符合食安規定之資料；中聯後續仍需面對污染原因釐清、留樣檢驗、製程改善、裁罰與司法調查。</p></div>
+<div class="statement"><h4>中央／地方政府說法</h4><p>政府<br/>政府行政措施從「分層風險管理」升級為「不分比例全面預防性下架」。食藥署強調將持續公開產品資訊、追蹤下架與回收情形，並依法查辦違規案件。</p></div>
+<div class="statement"><h4>南僑角色／說法</h4><p>南僑<br/>整體狀況已改變：輿論仍肯定其較早檢出異常，但法律與行政責任面已被納入裁罰對象；因此南僑不再只是正面把關者，也成為未依法通報案例之一。</p></div>
+<div class="statement"><h4>福懋、福壽、泰山說法</h4><p>福懋、福壽、泰山<br/>三大第一層品牌進入全面下架與退貨後續管理階段；泰山、福壽、福懋除消費者端回收退貨外，還需處理地方裁罰、供應鏈求償與重新上市檢驗證明。</p></div>
+<div class="statement"><h4>下游／輿論與KOL</h4><p>下游／輿論<br/>下游品牌壓力加大：即使使用比例未達20%，只要使用受影響油品，仍需先下架。消費者與媒體關注焦點轉向「232項產品是否完整公布、下架是否確實、何時能以檢驗證明重新上架」。</p></div>
+</div>
+<div class="links-row"><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634443" rel="noopener noreferrer" target="_blank">食藥署7/7擴大下架</a><a href="https://news.pts.org.tw/article/816581" rel="noopener noreferrer" target="_blank">公視擴大回收報導</a><a href="https://news.cts.com.tw/cna/life/202607/202607073052602.html" rel="noopener noreferrer" target="_blank">中央社／華視轉載：7/8前全面下架</a></div>
+</details></div>
 </section>
 <section id="sentiment">
-  <div class="section-title">
-    <p class="eyebrow">Public Sentiment</p>
-    <h2>社會與網路輿論彙整</h2>
-    <p>依 Excel 工作表整理各對象的輿論溫度、主要情緒與風險等級，並保留各面向解讀。</p>
-  </div>
-  <div class="grid-2">
-    <div class="panel">
-      <h3>輿論溫度與風險排序</h3>
-      <div class="table-wrap"><table><thead><tr><th>對象</th><th>輿論溫度</th><th>主要情緒</th><th>風險等級</th></tr></thead><tbody><tr><td>中聯油脂</td><td><span class="pill risk-high">最高</span></td><td>憤怒、質疑、要求究責</td><td><span class="pill risk-high">高</span></td></tr><tr><td>中央政府／食藥署</td><td><span class="pill risk-high">高</span></td><td>質疑制度、要求補破網</td><td><span class="pill risk-mid-high">中高</span></td></tr><tr><td>福懋、福壽、泰山</td><td><span class="pill risk-mid-high">中高</span></td><td>擔心產品、要求退貨與說明</td><td><span class="pill risk-mid-high">中高</span></td></tr><tr><td>257家下游品牌</td><td><span class="pill risk-mid-high">中高但分散</span></td><td>焦慮、查名單、要求揭露</td><td><span class="pill risk-mid-high">中高</span></td></tr><tr><td>地方政府／台中市</td><td><span class="pill risk-mid">中</span></td><td>要求查清通報時序</td><td><span class="pill risk-mid">中</span></td></tr><tr><td>南僑</td><td><span class="pill ">相對正面</span></td><td>肯定、感謝、視為揭露者</td><td><span class="pill risk-mid">低至中</span></td></tr></tbody></table></div>
-    </div>
-    <div class="panel">
-      <h3>核心判讀</h3>
-      <p>整體網路討論從「油品超標」擴大為「供應鏈信任危機」。中聯承受最高責任壓力；南僑因自主檢驗被視為第二道把關；政府被要求補足事前預防制度；下游品牌則面臨產品揭露與退貨透明度考驗。</p>
-    </div>
-  </div>
-  <section class="section-card"><h3>1.中聯油脂：最大負面焦點，輿論關鍵字是「源頭、延遲通報、隱匿疑慮」</h3><div class="opinion-grid"><div class="opinion-item"><h4>主要負面</h4><p>網友最不滿的是通報時序。公開報導指出，外界質疑中聯是否在4月或6月中就已接獲下游反映，卻到6月底才通報主管機關；中聯面對媒體追問時表示檢調已進廠調查，不便回應，這會加深「說不清楚」的觀感。<a href="https://tw.news.yahoo.com/%E4%B8%8B%E6%B8%B84%E6%9C%88%E5%8D%B3%E5%8F%8D%E6%98%A0%E8%8B%AF%E9%A7%A2%E8%8A%98%E8%B6%85%E6%A8%99-%E4%B8%AD%E8%81%AF%E6%B2%B9%E8%84%826%E6%9C%88%E6%89%8D%E9%80%9A%E5%A0%B1%E6%B6%89%E9%9A%B1%E5%8C%BF-%E5%BB%A0%E6%96%B9%E4%B8%8D%E5%9B%9E%E6%87%89-105748127.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(Yahoo新聞)</a></p></div><div class="opinion-item"><h4>品管疑慮</h4><p>輿論不只問「為什麼會超標」，也問「為什麼出貨前自驗合格、下游檢驗卻發現異常」。食藥署與衛福部說法指出，問題可能涉及製程，後續需釐清製程哪裡出問題。<a href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></p></div><div class="opinion-item"><h4>信任危機</h4><p>由於問題油約1,300公噸，流向泰山、福壽、福懋，再擴及第二層下游，網路情緒從單一公司品管問題擴大成「供應鏈信任崩壞」。媒體整理也強調至少數百家業者受影響。<a href="https://tw.news.yahoo.com/1300%E5%99%B8%E8%87%B4%E7%99%8C%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%99-%E5%85%A8%E5%8F%B0%E8%87%B3%E5%B0%91300%E5%AE%B6%E6%A5%AD%E8%80%85%E4%B8%AD%E9%8F%A2-%E4%B8%AD%E6%AA%A2%E6%AD%A3%E5%BC%8F%E5%88%86-060839622.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(Yahoo新聞)</a></p></div><div class="opinion-item"><h4>輿論結論</h4><p>中聯目前是責任歸因最集中的對象。即使最後污染原因尚未定案，輿論已先把焦點放在「是否延遲通報」與「製程／自主檢驗是否失靈」。</p></div></div></section><section class="section-card"><h3>2. 中央政府／食藥署：輿論焦點是「為何靠下游發現？制度是否太被動？」</h3><div class="opinion-grid"><div class="opinion-item"><h4>正面評價</h4><p>食藥署在事件爆發後有公布產品、要求下架、召開專家會議，並把第二層下游依20%使用比例納入預防性下架或揭露，這被視為後續處理有擴大控管。<a href="https://news.pts.org.tw/article/816173?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(公視新聞網 PNN)</a></p></div><div class="opinion-item"><h4>負面質疑</h4><p>網路與媒體評論批評中央過度依賴業者自主檢驗，真正發現問題的是下游南僑，不是政府例行稽查。PTT轉貼報導中也可見立委質疑若沒有南僑再驗，超標油品是否會被發現。<a href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></p></div><div class="opinion-item"><h4>制度爭議</h4><p>對於高風險、大量供應的食用油，現行檢驗頻率是否足夠成為討論焦點。立委王育敏、林淑芬等質疑應提高檢驗頻率，依批次、供應來源、用途加嚴。<a href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></p></div><div class="opinion-item"><h4>輿論結論</h4><p>食藥署目前是補救處理可以被看見，但制度預防被質疑。民眾不只要下架名單，也要知道未來如何避免同類事件重演。</p></div></div></section><section class="section-card"><h3>3. 福懋、福壽、泰山：被認為是受波及品牌，但消費者仍會用品牌責任檢視</h3><div class="opinion-grid"><div class="opinion-item"><h4>受波及認知</h4><p>多數新聞已說明源頭是中聯，福懋、福壽、泰山是第一層下游／分裝或再製業者，因此輿論並非完全把三家視為源頭。NOWnews、TVBS健康等懶人包也以「三大品牌產品下架、退貨方式」作為消費者資訊整理。<a href="https://www.nownews.com/news/6852417?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(NOWnews今日新聞)</a></p></div><div class="opinion-item"><h4>品牌壓力</h4><p>雖非源頭，但消費者買到的是泰山、福壽、福懋品牌產品，因此仍要求三家快速下架、清楚列批號、提供退貨。PTT Stock 討論也把泰山、福壽當成「概念股危機」來看，顯示資本市場與投資人也在評估品牌與股價衝擊。<a href="https://www.ptt.cc/bbs/Stock/M.1782976434.A.4C1.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></p></div><div class="opinion-item"><h4>消費者焦慮</h4><p>網友最在意的是「我家裡那瓶能不能用、吃到怎麼辦、怎麼退」。媒體懶人包大量整理15款、18款、21款產品與退貨方式，代表輿論需求偏向立即風險處理。<a href="https://tw.news.yahoo.com/%E5%A4%A7%E8%B1%86%E6%B2%99%E6%8B%89%E6%B2%B9%E8%87%B4%E7%99%8C%E7%89%A9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E6%98%AF%E4%BB%80%E9%BA%BC-%E6%81%90%E5%A2%9E%E8%82%BA%E7%99%8C%E8%83%83%E7%99%8C%E9%A2%A8%E9%9A%AA-%E6%B3%B0%E5%B1%B1%E6%B2%99%E6%8B%89%E6%B2%B9-210001631.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(Yahoo新聞)</a></p></div><div class="opinion-item"><h4>輿論結論</h4><p>三大品牌目前是次級責任承擔者：源頭責任在中聯，但品牌端若資訊不清、退貨麻煩，就會承接消費者怒氣。</p></div></div></section><section class="section-card"><h3>4. 257家第二層下游品牌：輿論焦點是「到底哪些加工食品有用到？」</h3><div class="opinion-grid"><div class="opinion-item"><h4>最大焦慮</h4><p>食藥署公布257家業者後，網友焦慮從油品擴大到加工食品與餐飲品牌：哪些泡麵、飯糰、沙拉、冷凍食品、餐飲醬料有使用？吃過怎麼辦？<a href="https://tw.news.yahoo.com/1300%E5%99%B8%E8%87%B4%E7%99%8C%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%99-%E5%85%A8%E5%8F%B0%E8%87%B3%E5%B0%91300%E5%AE%B6%E6%A5%AD%E8%80%85%E4%B8%AD%E9%8F%A2-%E4%B8%AD%E6%AA%A2%E6%AD%A3%E5%BC%8F%E5%88%86-060839622.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(Yahoo新聞)</a></p></div><div class="opinion-item"><h4>品牌差異</h4><p>已公開說明並下架的品牌，負評相對可控；只被列名但沒有清楚說明產品與批號的業者，容易被懷疑「資訊不透明」。</p></div><div class="opinion-item"><h4>輿論分層</h4><p>大品牌如味王、桂冠、聯華、路易莎、晶華、爭鮮、王品、金色三麥等被媒體點名後，網友通常會要求「說清楚涉及哪項產品、是否已下架、是否退費」。通路如全聯、超商、量販則被要求快速下架與退貨。</p></div><div class="opinion-item"><h4>輿論結論</h4><p>第二層下游面臨的是資訊透明度危機。很多業者未必有高比例使用問題油，但只要沒有講清楚，仍可能被納入消費者不信任名單。</p></div></div></section><section class="section-card"><h3>5. 地方政府/台中市政府：輿論評價相對務實，但同樣被要求查清通報時序</h3><div class="opinion-grid"><div class="opinion-item"><h4>正面觀感</h4><p>台中市是中聯所在地，媒體報導多指出台中市食安處與食藥署共同稽查、要求中聯停產停止出貨、追查流向。地方政府有持續發布下游數量與回收量，資訊更新相對頻繁。<a href="https://udn.com/news/story/124940/9608320?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(聯合新聞網)</a></p></div><div class="opinion-item"><h4>被期待之處</h4><p>輿論期待台中市查清中聯是否延遲通報，尤其是南僑6/11發現異常後，中聯內部與台中市掌握資訊的時間點。公視報導也指出，本週食藥署與台中市衛生局會配合檢調稽查。<a href="https://news.pts.org.tw/article/816173?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(公視新聞網 PNN)</a></p></div><div class="opinion-item"><h4>輿論結論</h4><p>台中市目前不是主要被罵對象，但被要求扮演查核與究責核心角色。</p></div></div></section><section class="section-card"><h3>6. 南僑：輿論相對正面，被視為「發現問題的下游把關者」</h3><div class="opinion-grid"><div class="opinion-item"><h4>正面定位</h4><p>南僑被多數報導與討論視為「發現疑似異常的下游業者」。PTT Stock 轉貼報導時，標題即為「揪出致癌沙拉油功臣曝光」，討論方向也偏向「還好有南僑發現」。<a href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></p></div><div class="opinion-item"><h4>制度意義</h4><p>衛福部長石崇良與食藥署長姜至剛說法指出，這批油出貨時中聯自主檢驗合格，後來是下游業者南僑發現疑似異常，中聯回頭驗原料才確認超標。這讓輿論認為南僑的自主檢驗發揮了第二道防線。<a href="https://tw.news.yahoo.com/%E6%B2%99%E6%8B%89%E6%B2%B9%E8%87%B4%E7%99%8C%E7%89%A9-%E9%A3%9F%E8%97%A5%E7%BD%B2%EF%BC%9A%E4%B8%8B%E6%B8%B8%E5%BB%A0%E5%95%86%E5%8D%97%E5%83%91%E9%9B%86%E5%9C%98%E7%99%BC%E7%8F%BE%E7%95%B0%E5%B8%B8-%E4%B8%AD%E8%81%AF%E6%B2%B9%E8%84%82%E6%AA%A2%E9%A9%97%E5%89%A9%E9%A4%98%E6%B2%B9%E5%93%81%E7%A2%BA%E8%AA%8D%E8%B6%85%E6%A8%99-072951649.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(Yahoo新聞)</a></p></div><div class="opinion-item"><h4>媒體評論</h4><p>聯合報「重磅快評」相關標題直接以「這次是南僑擋住致癌油」切入，將南僑放在相對正面的揭露者位置，同時反問下一次誰來救食安。<a href="https://udn.com/news/story/11091/9609221?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(聯合新聞網)</a></p></div><div class="opinion-item"><h4>輿論結論</h4><p>南僑目前在網路上的角色是相對加分，但它仍不是事件主角；真正被追問的是「南僑發現後，中聯與主管機關之間發生什麼」。</p></div></div></section>
+<div class="section-title">
+<div class="eyebrow">Public Opinion</div>
+<h2>社會與網路輿論彙整</h2>
+<p>保留 Excel 原始分類，並將檔案中對應儲存格的超連結補回網頁。</p>
+</div>
+<div class="table-wrap"><table><thead><tr><th>對象</th><th>輿論溫度</th><th>主要情緒</th><th>風險等級</th></tr></thead><tbody><tr><td>中聯油脂</td><td>最高</td><td>憤怒、質疑、要求究責</td><td><span class="risk risk-high">高</span></td></tr><tr><td>中央政府／食藥署</td><td>高</td><td>質疑制度、要求補破網</td><td><span class="risk risk-high">中高</span></td></tr><tr><td>福懋、福壽、泰山</td><td>中高</td><td>擔心產品、要求退貨與說明</td><td><span class="risk risk-high">中高</span></td></tr><tr><td>257家下游品牌</td><td>中高但分散</td><td>焦慮、查名單、要求揭露</td><td><span class="risk risk-high">中高</span></td></tr><tr><td>地方政府／台中市</td><td>中</td><td>要求查清通報時序</td><td><span class="risk risk-mid">中</span></td></tr><tr><td>南僑</td><td>相對正面</td><td>肯定、感謝、視為揭露者</td><td><span class="risk risk-mid">低至中</span></td></tr></tbody></table></div>
+<div class="analysis-grid">
+<article class="analysis-card">
+<h3>1.中聯油脂：最大負面焦點，輿論關鍵字是「源頭、延遲通報、隱匿疑慮」</h3>
+<div class="table-wrap mini"><table><thead><tr><th>面向</th><th>網路輿論看法</th></tr></thead><tbody><tr><td class="topic-cell">主要負面</td><td>網友最不滿的是通報時序。公開報導指出，外界質疑中聯是否在4月或6月中就已接獲下游反映，卻到6月底才通報主管機關；中聯面對媒體追問時表示檢調已進廠調查，不便回應，這會加深「說不清楚」的觀感。(Yahoo新聞) <a class="source-chip" href="https://tw.news.yahoo.com/%E4%B8%8B%E6%B8%B84%E6%9C%88%E5%8D%B3%E5%8F%8D%E6%98%A0%E8%8B%AF%E9%A7%A2%E8%8A%98%E8%B6%85%E6%A8%99-%E4%B8%AD%E8%81%AF%E6%B2%B9%E8%84%826%E6%9C%88%E6%89%8D%E9%80%9A%E5%A0%B1%E6%B6%89%E9%9A%B1%E5%8C%BF-%E5%BB%A0%E6%96%B9%E4%B8%8D%E5%9B%9E%E6%87%89-105748127.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="下游4月即反映苯駢芘超標 中聯油脂6月才通報涉隱匿？廠方不回應">來源</a></td></tr><tr><td class="topic-cell">品管疑慮</td><td>輿論不只問「為什麼會超標」，也問「為什麼出貨前自驗合格、下游檢驗卻發現異常」。食藥署與衛福部說法指出，問題可能涉及製程，後續需釐清製程哪裡出問題。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 揪出致癌沙拉油功臣曝光 衛福部：下游業者南僑通報 - 看板 Stock - 批踢踢實業坊">來源</a></td></tr><tr><td class="topic-cell">信任危機</td><td>由於問題油約1,300公噸，流向泰山、福壽、福懋，再擴及第二層下游，網路情緒從單一公司品管問題擴大成「供應鏈信任崩壞」。媒體整理也強調至少數百家業者受影響。(Yahoo新聞) <a class="source-chip" href="https://tw.news.yahoo.com/1300%E5%99%B8%E8%87%B4%E7%99%8C%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%99-%E5%85%A8%E5%8F%B0%E8%87%B3%E5%B0%91300%E5%AE%B6%E6%A5%AD%E8%80%85%E4%B8%AD%E9%8F%A2-%E4%B8%AD%E6%AA%A2%E6%AD%A3%E5%BC%8F%E5%88%86-060839622.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="1300噸致癌油「苯駢芘」超標 全台至少300家業者中鏢！中檢正式分「他」字案追食安">來源</a></td></tr><tr><td class="topic-cell">輿論結論</td><td>中聯目前是責任歸因最集中的對象。即使最後污染原因尚未定案，輿論已先把焦點放在「是否延遲通報」與「製程／自主檢驗是否失靈」。</td></tr></tbody></table></div>
+</article>
+<article class="analysis-card">
+<h3>2. 中央政府／食藥署：輿論焦點是「為何靠下游發現？制度是否太被動？」</h3>
+<div class="table-wrap mini"><table><thead><tr><th>面向</th><th>網路輿論看法</th></tr></thead><tbody><tr><td class="topic-cell">正面評價</td><td>食藥署在事件爆發後有公布產品、要求下架、召開專家會議，並把第二層下游依20%使用比例納入預防性下架或揭露，這被視為後續處理有擴大控管。(公視新聞網 PNN) <a class="source-chip" href="https://news.pts.org.tw/article/816173?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="中聯油苯駢芘超標是否涉隱匿？ 石崇良：本週配合檢調勘查">來源</a></td></tr><tr><td class="topic-cell">負面質疑</td><td>網路與媒體評論批評中央過度依賴業者自主檢驗，真正發現問題的是下游南僑，不是政府例行稽查。PTT轉貼報導中也可見立委質疑若沒有南僑再驗，超標油品是否會被發現。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 揪出致癌沙拉油功臣曝光 衛福部：下游業者南僑通報 - 看板 Stock - 批踢踢實業坊">來源</a></td></tr><tr><td class="topic-cell">制度爭議</td><td>對於高風險、大量供應的食用油，現行檢驗頻率是否足夠成為討論焦點。立委王育敏、林淑芬等質疑應提高檢驗頻率，依批次、供應來源、用途加嚴。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 揪出致癌沙拉油功臣曝光 衛福部：下游業者南僑通報 - 看板 Stock - 批踢踢實業坊">來源</a></td></tr><tr><td class="topic-cell">輿論結論</td><td>食藥署目前是補救處理可以被看見，但制度預防被質疑。民眾不只要下架名單，也要知道未來如何避免同類事件重演。</td></tr></tbody></table></div>
+</article>
+<article class="analysis-card">
+<h3>3. 福懋、福壽、泰山：被認為是受波及品牌，但消費者仍會用品牌責任檢視</h3>
+<div class="table-wrap mini"><table><thead><tr><th>面向</th><th>網路輿論看法</th></tr></thead><tbody><tr><td class="topic-cell">受波及認知</td><td>多數新聞已說明源頭是中聯，福懋、福壽、泰山是第一層下游／分裝或再製業者，因此輿論並非完全把三家視為源頭。NOWnews、TVBS健康等懶人包也以「三大品牌產品下架、退貨方式」作為消費者資訊整理。(NOWnews今日新聞) <a class="source-chip" href="https://www.nownews.com/news/6852417?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="泰山、福壽、福懋15油品急下架！原因、退貨方式、誤吃怎辦一次看 | 生活焦點 | 要聞 | NOWnews今日新聞">來源</a></td></tr><tr><td class="topic-cell">品牌壓力</td><td>雖非源頭，但消費者買到的是泰山、福壽、福懋品牌產品，因此仍要求三家快速下架、清楚列批號、提供退貨。PTT Stock 討論也把泰山、福壽當成「概念股危機」來看，顯示資本市場與投資人也在評估品牌與股價衝擊。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Stock/M.1782976434.A.4C1.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 中聯大豆沙拉油苯駢芘超標 食藥署：請業 - 看板 Stock - 批踢踢實業坊">來源</a></td></tr><tr><td class="topic-cell">消費者焦慮</td><td>網友最在意的是「我家裡那瓶能不能用、吃到怎麼辦、怎麼退」。媒體懶人包大量整理15款、18款、21款產品與退貨方式，代表輿論需求偏向立即風險處理。(Yahoo新聞) <a class="source-chip" href="https://tw.news.yahoo.com/%E5%A4%A7%E8%B1%86%E6%B2%99%E6%8B%89%E6%B2%B9%E8%87%B4%E7%99%8C%E7%89%A9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E6%98%AF%E4%BB%80%E9%BA%BC-%E6%81%90%E5%A2%9E%E8%82%BA%E7%99%8C%E8%83%83%E7%99%8C%E9%A2%A8%E9%9A%AA-%E6%B3%B0%E5%B1%B1%E6%B2%99%E6%8B%89%E6%B2%B9-210001631.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="大豆沙拉油致癌物「苯駢芘」是什麼？恐增肺癌胃癌風險！泰山沙拉油＋福壽福懋21款名單，怎麼退費一次看">來源</a></td></tr><tr><td class="topic-cell">輿論結論</td><td>三大品牌目前是次級責任承擔者：源頭責任在中聯，但品牌端若資訊不清、退貨麻煩，就會承接消費者怒氣。</td></tr></tbody></table></div>
+</article>
+<article class="analysis-card">
+<h3>4. 257家第二層下游品牌：輿論焦點是「到底哪些加工食品有用到？」</h3>
+<div class="table-wrap mini"><table><thead><tr><th>面向</th><th>網路輿論看法</th></tr></thead><tbody><tr><td class="topic-cell">最大焦慮</td><td>食藥署公布257家業者後，網友焦慮從油品擴大到加工食品與餐飲品牌：哪些泡麵、飯糰、沙拉、冷凍食品、餐飲醬料有使用？吃過怎麼辦？(Yahoo新聞) <a class="source-chip" href="https://tw.news.yahoo.com/1300%E5%99%B8%E8%87%B4%E7%99%8C%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%99-%E5%85%A8%E5%8F%B0%E8%87%B3%E5%B0%91300%E5%AE%B6%E6%A5%AD%E8%80%85%E4%B8%AD%E9%8F%A2-%E4%B8%AD%E6%AA%A2%E6%AD%A3%E5%BC%8F%E5%88%86-060839622.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="1300噸致癌油「苯駢芘」超標 全台至少300家業者中鏢！中檢正式分「他」字案追食安">來源</a></td></tr><tr><td class="topic-cell">品牌差異</td><td>已公開說明並下架的品牌，負評相對可控；只被列名但沒有清楚說明產品與批號的業者，容易被懷疑「資訊不透明」。</td></tr><tr><td class="topic-cell">輿論分層</td><td>大品牌如味王、桂冠、聯華、路易莎、晶華、爭鮮、王品、金色三麥等被媒體點名後，網友通常會要求「說清楚涉及哪項產品、是否已下架、是否退費」。通路如全聯、超商、量販則被要求快速下架與退貨。</td></tr><tr><td class="topic-cell">輿論結論</td><td>第二層下游面臨的是資訊透明度危機。很多業者未必有高比例使用問題油，但只要沒有講清楚，仍可能被納入消費者不信任名單。</td></tr></tbody></table></div>
+</article>
+<article class="analysis-card">
+<h3>5. 地方政府/台中市政府：輿論評價相對務實，但同樣被要求查清通報時序</h3>
+<div class="table-wrap mini"><table><thead><tr><th>面向</th><th>網路輿論看法</th></tr></thead><tbody><tr><td class="topic-cell">正面觀感</td><td>台中市是中聯所在地，媒體報導多指出台中市食安處與食藥署共同稽查、要求中聯停產停止出貨、追查流向。地方政府有持續發布下游數量與回收量，資訊更新相對頻繁。(聯合新聞網) <a class="source-chip" href="https://udn.com/news/story/124940/9608320?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="中聯油品苯駢芘超標 金門查106家業者未使用">來源</a></td></tr><tr><td class="topic-cell">被期待之處</td><td>輿論期待台中市查清中聯是否延遲通報，尤其是南僑6/11發現異常後，中聯內部與台中市掌握資訊的時間點。公視報導也指出，本週食藥署與台中市衛生局會配合檢調稽查。(公視新聞網 PNN) <a class="source-chip" href="https://news.pts.org.tw/article/816173?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="中聯油苯駢芘超標是否涉隱匿？ 石崇良：本週配合檢調勘查">來源</a></td></tr><tr><td class="topic-cell">輿論結論</td><td>台中市目前不是主要被罵對象，但被要求扮演查核與究責核心角色。</td></tr></tbody></table></div>
+</article>
+<article class="analysis-card">
+<h3>6. 南僑：輿論相對正面，被視為「發現問題的下游把關者」</h3>
+<div class="table-wrap mini"><table><thead><tr><th>面向</th><th>網路輿論看法</th></tr></thead><tbody><tr><td class="topic-cell">正面定位</td><td>南僑被多數報導與討論視為「發現疑似異常的下游業者」。PTT Stock 轉貼報導時，標題即為「揪出致癌沙拉油功臣曝光」，討論方向也偏向「還好有南僑發現」。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 揪出致癌沙拉油功臣曝光 衛福部：下游業者南僑通報 - 看板 Stock - 批踢踢實業坊">來源</a></td></tr><tr><td class="topic-cell">制度意義</td><td>衛福部長石崇良與食藥署長姜至剛說法指出，這批油出貨時中聯自主檢驗合格，後來是下游業者南僑發現疑似異常，中聯回頭驗原料才確認超標。這讓輿論認為南僑的自主檢驗發揮了第二道防線。(Yahoo新聞) <a class="source-chip" href="https://tw.news.yahoo.com/%E6%B2%99%E6%8B%89%E6%B2%B9%E8%87%B4%E7%99%8C%E7%89%A9-%E9%A3%9F%E8%97%A5%E7%BD%B2%EF%BC%9A%E4%B8%8B%E6%B8%B8%E5%BB%A0%E5%95%86%E5%8D%97%E5%83%91%E9%9B%86%E5%9C%98%E7%99%BC%E7%8F%BE%E7%95%B0%E5%B8%B8-%E4%B8%AD%E8%81%AF%E6%B2%B9%E8%84%82%E6%AA%A2%E9%A9%97%E5%89%A9%E9%A4%98%E6%B2%B9%E5%93%81%E7%A2%BA%E8%AA%8D%E8%B6%85%E6%A8%99-072951649.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="沙拉油致癌物 食藥署：下游廠商南僑集團發現異常 中聯油脂檢驗剩餘油品確認超標 - Yahoo奇摩新聞">來源</a></td></tr><tr><td class="topic-cell">媒體評論</td><td>聯合報「重磅快評」相關標題直接以「這次是南僑擋住致癌油」切入，將南僑放在相對正面的揭露者位置，同時反問下一次誰來救食安。(聯合新聞網) <a class="source-chip" href="https://udn.com/news/story/11091/9609221?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="【重磅快評】食安風暴襲台 真正該下架的不只是問題油品">來源</a></td></tr><tr><td class="topic-cell">輿論結論</td><td>南僑目前在網路上的角色是相對加分，但它仍不是事件主角；真正被追問的是「南僑發現後，中聯與主管機關之間發生什麼」。</td></tr></tbody></table></div>
+</article></div>
 </section>
-<section id="platforms">
-  <div class="section-title">
-    <p class="eyebrow">KOL / Platform Voices</p>
-    <h2>KOL、專家與平台討論</h2>
-    <p>保留毒物科醫師、媒體評論、PTT／社群討論等分層觀點。</p>
-  </div>
-  <section class="section-card"><h3>1.毒物科醫師：降低恐慌，但強調苯駢芘是明確致癌風險</h3><div class="table-wrap"><table><thead><tr><th>人物／來源</th><th>主要說法</th><th>輿論效果</th></tr></thead><tbody><tr><td>林口長庚臨床毒物科主任顏宗海</td><td>顏宗海表示，苯駢芘是公認一級致癌物，醫學上沒有特殊解毒劑；但風險重點在長期暴露，若誤食應停止食用問題油品，多攝取新鮮蔬果協助代謝。<a href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(Yahoo新聞)</a></td><td>他的說法有助於把「恐慌」轉為「停止使用、退貨、降低暴露」的具體行動。</td></tr><tr><td>台中榮總毒物科主任毛彥喬</td><td>毛彥喬說明，苯駢芘是多環芳香烴的一種，被IARC列為第一類致癌物，也是各國評估食品PAHs污染的重要指標。<a href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E5%A4%A7%E8%B1%86%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E7%A7%91%E5%B0%88%E5%AE%B6%E6%8F%AD%E5%AF%86-%E7%AC%AC-033800296.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(Yahoo新聞)</a></td><td>強化本案的嚴重性，讓輿論不會把它視為單純檢驗小瑕疵。</td></tr><tr><td>腎臟科醫師王介立</td><td>王介立指出，苯駢芘屬於長期累積致癌風險，不會因短期攝取就急性中毒；民眾不必過度恐慌，但應立即停用問題油品並配合回收。<a href="https://news.tvbs.com.tw/health/3246453?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(TVBS)</a></td><td>有助於安撫「已經吃下肚怎麼辦」的焦慮。</td></tr></tbody></table></div></section><section class="section-card"><h3>2. 媒體評論型KOL／社論：把事件上升到「制度失靈」與「食安信任」</h3><div class="table-wrap"><table><thead><tr><th>來源</th><th>主要說法</th><th>輿論效果</th></tr></thead><tbody><tr><td>聯合報重磅快評</td><td>評論將本案與過去頂新油品事件比較，認為兩者都涉及第一類致癌物進入食品供應鏈，真正該檢討的不只是問題油，而是政府危機處理與食安治理。<a href="https://udn.com/news/story/11091/9609221?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(聯合新聞網)</a></td><td>把事件從單一企業危機拉高到政府治理危機。</td></tr><tr><td>同系列評論標題「這次是南僑擋住致癌油，下次誰來救食安？」</td><td>這個切角把南僑定位為發現問題的關鍵者，同時質疑若沒有下游自主檢驗，制度是否能發現問題。<a href="https://udn.com/news/story/11091/9609221?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(聯合新聞網)</a></td><td>放大「不能靠運氣、不能靠某家下游良心」的輿論情緒。</td></tr></tbody></table></div></section><section class="section-card"><h3>3. PTT／社群討論：南僑被稱讚，中聯與政府被質疑，三大品牌被當成投資與消費風險</h3><div class="table-wrap"><table><thead><tr><th>平台／內容</th><th>主要討論方向</th><th>來源</th></tr></thead><tbody><tr><td>PTT Stock：中聯大豆沙拉油苯駢芘超標</td><td>討論將泰山、福壽視為「沙拉油概念股危機」，關注品牌、股價與消費信任衝擊。<a href="https://www.ptt.cc/bbs/Stock/M.1782976434.A.4C1.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></td><td>PTT Stock</td></tr><tr><td>PTT Stock：揪出致癌沙拉油功臣曝光</td><td>轉貼報導指出南僑是發現疑似異常的下游業者，網友討論方向偏向「還好有南僑」，並質疑若沒有南僑是否會繼續流入市場。<a href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></td><td>PTT Stock</td></tr><tr><td>PTT地方版／各縣市查核新聞</td><td>地方版討論重點多為各縣市是否下架、夜市與餐飲是否使用、民眾如何退貨與避免誤用。<a href="https://www.ptt.cc/bbs/Tainan/M.1783050545.A.014.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">(批踢踢實業坊)</a></td><td>PTT Tainan等</td></tr></tbody></table></div></section>
+<section id="kol">
+<div class="section-title">
+<div class="eyebrow">KOL / Expert / Platform</div>
+<h2>KOL、專家與平台討論</h2>
+<p>彙整毒物科醫師、媒體評論與 PTT／社群討論方向；含 Excel 檔案內建外部連結。</p>
+</div>
+<div class="analysis-grid">
+<article class="analysis-card">
+<h3>1.毒物科醫師：降低恐慌，但強調苯駢芘是明確致癌風險</h3>
+<div class="table-wrap mini"><table><thead><tr><th>來源／平台</th><th>主要說法</th><th>輿論效果／平台</th></tr></thead><tbody><tr><td class="topic-cell">林口長庚臨床毒物科主任顏宗海</td><td>顏宗海表示，苯駢芘是公認一級致癌物，醫學上沒有特殊解毒劑；但風險重點在長期暴露，若誤食應停止食用問題油品，多攝取新鮮蔬果協助代謝。(Yahoo新聞) <a class="source-chip" href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="中聯沙拉油「苯駢芘」超標4倍 毒物專家：公認一級致癌物，沒有解毒劑">來源</a></td><td>他的說法有助於把「恐慌」轉為「停止使用、退貨、降低暴露」的具體行動。</td></tr><tr><td class="topic-cell">台中榮總毒物科主任毛彥喬</td><td>毛彥喬說明，苯駢芘是多環芳香烴的一種，被IARC列為第一類致癌物，也是各國評估食品PAHs污染的重要指標。(Yahoo新聞) <a class="source-chip" href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E5%A4%A7%E8%B1%86%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E7%A7%91%E5%B0%88%E5%AE%B6%E6%8F%AD%E5%AF%86-%E7%AC%AC-033800296.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="中聯大豆沙拉油「苯駢芘」超標4倍！毒物科專家揭密：第一類致癌物">來源</a></td><td>強化本案的嚴重性，讓輿論不會把它視為單純檢驗小瑕疵。</td></tr><tr><td class="topic-cell">腎臟科醫師王介立</td><td>王介立指出，苯駢芘屬於長期累積致癌風險，不會因短期攝取就急性中毒；民眾不必過度恐慌，但應立即停用問題油品並配合回收。(TVBS) <a class="source-chip" href="https://news.tvbs.com.tw/health/3246453?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="沙拉油驗出一級致癌物超標 已吃下肚怎麼辦？醫：快做2事│TVBS新聞網">來源</a></td><td>有助於安撫「已經吃下肚怎麼辦」的焦慮。</td></tr></tbody></table></div>
+</article>
+<article class="analysis-card">
+<h3>2. 媒體評論型KOL／社論：把事件上升到「制度失靈」與「食安信任」</h3>
+<div class="table-wrap mini"><table><thead><tr><th>來源／平台</th><th>主要說法</th><th>輿論效果／平台</th></tr></thead><tbody><tr><td class="topic-cell">來源</td><td>主要說法</td><td>輿論效果</td></tr><tr><td class="topic-cell">聯合報重磅快評</td><td>評論將本案與過去頂新油品事件比較，認為兩者都涉及第一類致癌物進入食品供應鏈，真正該檢討的不只是問題油，而是政府危機處理與食安治理。(聯合新聞網) <a class="source-chip" href="https://udn.com/news/story/11091/9609221?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="【重磅快評】食安風暴襲台 真正該下架的不只是問題油品">來源</a></td><td>把事件從單一企業危機拉高到政府治理危機。</td></tr><tr><td class="topic-cell">同系列評論標題「這次是南僑擋住致癌油，下次誰來救食安？」</td><td>這個切角把南僑定位為發現問題的關鍵者，同時質疑若沒有下游自主檢驗，制度是否能發現問題。(聯合新聞網) <a class="source-chip" href="https://udn.com/news/story/11091/9609221?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="【重磅快評】食安風暴襲台 真正該下架的不只是問題油品">來源</a></td><td>放大「不能靠運氣、不能靠某家下游良心」的輿論情緒。</td></tr></tbody></table></div>
+</article>
+<article class="analysis-card">
+<h3>3. PTT／社群討論：南僑被稱讚，中聯與政府被質疑，三大品牌被當成投資與消費風險</h3>
+<div class="table-wrap mini"><table><thead><tr><th>來源／平台</th><th>主要說法</th><th>輿論效果／平台</th></tr></thead><tbody><tr><td class="topic-cell">平台／內容</td><td>主要討論方向</td><td>來源</td></tr><tr><td class="topic-cell">PTT Stock：中聯大豆沙拉油苯駢芘超標</td><td>討論將泰山、福壽視為「沙拉油概念股危機」，關注品牌、股價與消費信任衝擊。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Stock/M.1782976434.A.4C1.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 中聯大豆沙拉油苯駢芘超標 食藥署：請業 - 看板 Stock - 批踢踢實業坊">來源</a></td><td>PTT Stock</td></tr><tr><td class="topic-cell">PTT Stock：揪出致癌沙拉油功臣曝光</td><td>轉貼報導指出南僑是發現疑似異常的下游業者，網友討論方向偏向「還好有南僑」，並質疑若沒有南僑是否會繼續流入市場。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Stock/M.1782987335.A.CE4.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 揪出致癌沙拉油功臣曝光 衛福部：下游業者南僑通報 - 看板 Stock - 批踢踢實業坊">來源</a></td><td>PTT Stock</td></tr><tr><td class="topic-cell">PTT地方版／各縣市查核新聞</td><td>地方版討論重點多為各縣市是否下架、夜市與餐飲是否使用、民眾如何退貨與避免誤用。(批踢踢實業坊) <a class="source-chip" href="https://www.ptt.cc/bbs/Tainan/M.1783050545.A.014.html?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank" title="[新聞] 中聯大豆沙拉油苯駢芘超標 台南啟動查 - 看板 Tainan - 批踢踢實業坊">來源</a></td><td>PTT Tainan等</td></tr></tbody></table></div>
+</article></div>
 </section>
-<section id="sources">
-  <div class="section-title">
-    <p class="eyebrow">References</p>
-    <h2>來源連結</h2>
-    <p>以下依 Excel「來源連結」工作表整理，所有外部連結均可直接點擊並以新分頁開啟。</p>
-  </div>
-  <div class="table-wrap source-table"><table><thead><tr><th>日期／時段</th><th>來源標題</th><th>URL</th></tr></thead><tbody><tr><td>2026/4/4</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/4/8–4/10</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/6/11</td><td>聯合報：南僑與通報時序</td><td><a href="https://udn.com/news/story/124940/9608151" target="_blank" rel="noopener noreferrer">https://udn.com/news/story/124940/9608151</a></td></tr><tr><td>2026/6/11</td><td>華視新聞</td><td><a href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" target="_blank" rel="noopener noreferrer">https://news.cts.com.tw/cts/general/202607/202607023050849.html</a></td></tr><tr><td>2026/6/25、6/30</td><td>聯合報：通報時序</td><td><a href="https://udn.com/news/story/124940/9608151" target="_blank" rel="noopener noreferrer">https://udn.com/news/story/124940/9608151</a></td></tr><tr><td>2026/6/25、6/30</td><td>食藥署7/4新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594</a></td></tr><tr><td>2026/6/30 晚間</td><td>福懋6/30公告</td><td><a href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=376" target="_blank" rel="noopener noreferrer">https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=376</a></td></tr><tr><td>2026/6/30 晚間</td><td>泰山官方聲明</td><td><a href="https://www.taisun.com.tw/30718/" target="_blank" rel="noopener noreferrer">https://www.taisun.com.tw/30718/</a></td></tr><tr><td>2026/6/30 晚間</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/7/1</td><td>中聯聲明</td><td><a href="https://www.cuoc.com.tw/tw/news/?aid=30&amp;method=detail" target="_blank" rel="noopener noreferrer">https://www.cuoc.com.tw/tw/news/?aid=30&amp;method=detail</a></td></tr><tr><td>2026/7/1</td><td>台中市7/1公告</td><td><a href="https://www.fds.taichung.gov.tw/1210187/1210197/1210198/nodeCp?nodeId=3311815" target="_blank" rel="noopener noreferrer">https://www.fds.taichung.gov.tw/1210187/1210197/1210198/nodeCp?nodeId=3311815</a></td></tr><tr><td>2026/7/1</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/7/2–7/3</td><td>食藥署7/3新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634410" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634410</a></td></tr><tr><td>2026/7/2–7/3</td><td>福懋回收退款</td><td><a href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=378" target="_blank" rel="noopener noreferrer">https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=378</a></td></tr><tr><td>2026/7/2–7/3</td><td>泰山退貨說明</td><td><a href="https://www.taisun.com.tw/260702/" target="_blank" rel="noopener noreferrer">https://www.taisun.com.tw/260702/</a></td></tr><tr><td>2026/7/2–7/3</td><td>華視新聞</td><td><a href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" target="_blank" rel="noopener noreferrer">https://news.cts.com.tw/cts/general/202607/202607023050849.html</a></td></tr><tr><td>2026/7/4</td><td>食藥署7/4新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594</a></td></tr><tr><td>2026/7/4</td><td>今周刊下游整理</td><td><a href="https://www.businesstoday.com.tw/article/category/183030/post/202607040003/" target="_blank" rel="noopener noreferrer">https://www.businesstoday.com.tw/article/category/183030/post/202607040003/</a></td></tr><tr><td>2026/7/5</td><td>食藥署7/5新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634418" target="_blank" rel="noopener noreferrer">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634418</a></td></tr><tr><td>2026/7/5</td><td>聯合報：台中市稽查</td><td><a href="https://udn.com/news/story/124940/9608250" target="_blank" rel="noopener noreferrer">https://udn.com/news/story/124940/9608250</a></td></tr><tr><td>2026/7/5</td><td>NOWnews下游整理</td><td><a href="https://www.nownews.com/news/6853042" target="_blank" rel="noopener noreferrer">https://www.nownews.com/news/6853042</a></td></tr><tr><td>2026/7/6</td><td>公視：7/6期限</td><td><a href="https://news.pts.org.tw/article/816241" target="_blank" rel="noopener noreferrer">https://news.pts.org.tw/article/816241</a></td></tr><tr><td>2026/7/6</td><td>聯合報重磅快評</td><td><a href="https://udn.com/news/story/11091/9609221" target="_blank" rel="noopener noreferrer">https://udn.com/news/story/11091/9609221</a></td></tr><tr><td>2026/7/6</td><td>毒物專家說法</td><td><a href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html" target="_blank" rel="noopener noreferrer">https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html</a></td></tr></tbody></table></div>
-</section>
+<section id="sources"><div class="section-title"><div class="eyebrow">Sources</div><h2>來源連結</h2><p>以下依時間軸與 Excel 來源連結整理；所有外部連結均可直接點擊並以新分頁開啟。</p></div><div class="table-wrap source-table"><table><thead><tr><th>日期／時段</th><th>來源標題</th><th>URL</th></tr></thead><tbody><tr><td>2026/4/4</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/4/8–4/10</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/6/11</td><td>聯合報：南僑與通報時序</td><td><a href="https://udn.com/news/story/124940/9608151" rel="noopener noreferrer" target="_blank">https://udn.com/news/story/124940/9608151</a></td></tr><tr><td>2026/6/11</td><td>華視新聞</td><td><a href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" rel="noopener noreferrer" target="_blank">https://news.cts.com.tw/cts/general/202607/202607023050849.html</a></td></tr><tr><td>2026/6/25、6/30</td><td>聯合報：通報時序</td><td><a href="https://udn.com/news/story/124940/9608151" rel="noopener noreferrer" target="_blank">https://udn.com/news/story/124940/9608151</a></td></tr><tr><td>2026/6/25、6/30</td><td>食藥署7/4新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594</a></td></tr><tr><td>2026/6/30 晚間</td><td>福懋6/30公告</td><td><a href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=376" rel="noopener noreferrer" target="_blank">https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=376</a></td></tr><tr><td>2026/6/30 晚間</td><td>泰山官方聲明</td><td><a href="https://www.taisun.com.tw/30718/" rel="noopener noreferrer" target="_blank">https://www.taisun.com.tw/30718/</a></td></tr><tr><td>2026/6/30 晚間</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/7/1</td><td>中聯聲明</td><td><a href="https://www.cuoc.com.tw/tw/news/?aid=30&amp;method=detail" rel="noopener noreferrer" target="_blank">https://www.cuoc.com.tw/tw/news/?aid=30&amp;method=detail</a></td></tr><tr><td>2026/7/1</td><td>台中市7/1公告</td><td><a href="https://www.fds.taichung.gov.tw/1210187/1210197/1210198/nodeCp?nodeId=3311815" rel="noopener noreferrer" target="_blank">https://www.fds.taichung.gov.tw/1210187/1210197/1210198/nodeCp?nodeId=3311815</a></td></tr><tr><td>2026/7/1</td><td>食藥署7/1新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634379</a></td></tr><tr><td>2026/7/2–7/3</td><td>食藥署7/3新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634410" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634410</a></td></tr><tr><td>2026/7/2–7/3</td><td>福懋回收退款</td><td><a href="https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=378" rel="noopener noreferrer" target="_blank">https://www.fopco.com.tw/News_Detail.php?ADKey=1&amp;CataP=378</a></td></tr><tr><td>2026/7/2–7/3</td><td>泰山退貨說明</td><td><a href="https://www.taisun.com.tw/260702/" rel="noopener noreferrer" target="_blank">https://www.taisun.com.tw/260702/</a></td></tr><tr><td>2026/7/2–7/3</td><td>華視新聞</td><td><a href="https://news.cts.com.tw/cts/general/202607/202607023050849.html" rel="noopener noreferrer" target="_blank">https://news.cts.com.tw/cts/general/202607/202607023050849.html</a></td></tr><tr><td>2026/7/4</td><td>食藥署7/4新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=31594</a></td></tr><tr><td>2026/7/4</td><td>今周刊下游整理</td><td><a href="https://www.businesstoday.com.tw/article/category/183030/post/202607040003/" rel="noopener noreferrer" target="_blank">https://www.businesstoday.com.tw/article/category/183030/post/202607040003/</a></td></tr><tr><td>2026/7/5</td><td>食藥署7/5新聞稿</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634418" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634418</a></td></tr><tr><td>2026/7/5</td><td>聯合報：台中市稽查</td><td><a href="https://udn.com/news/story/124940/9608250" rel="noopener noreferrer" target="_blank">https://udn.com/news/story/124940/9608250</a></td></tr><tr><td>2026/7/5</td><td>NOWnews下游整理</td><td><a href="https://www.nownews.com/news/6853042" rel="noopener noreferrer" target="_blank">https://www.nownews.com/news/6853042</a></td></tr><tr><td>2026/7/6</td><td>公視：7/6期限</td><td><a href="https://news.pts.org.tw/article/816241" rel="noopener noreferrer" target="_blank">https://news.pts.org.tw/article/816241</a></td></tr><tr><td>2026/7/6</td><td>聯合報重磅快評</td><td><a href="https://udn.com/news/story/11091/9609221" rel="noopener noreferrer" target="_blank">https://udn.com/news/story/11091/9609221</a></td></tr><tr><td>2026/7/6</td><td>毒物專家說法</td><td><a href="https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html" rel="noopener noreferrer" target="_blank">https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%B2%99%E6%8B%89%E6%B2%B9-%E8%8B%AF%E9%A7%A2%E8%8A%98-%E8%B6%85%E6%A8%994%E5%80%8D-%E6%AF%92%E7%89%A9%E5%B0%88%E5%AE%B6-%E5%85%AC%E8%AA%8D-150724934.html</a></td></tr><tr><td>2026/7/7</td><td>食藥署7/7產品明細</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634440" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634440</a></td></tr><tr><td>2026/7/7</td><td>食藥署7/7擴大下架</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634443" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634443</a></td></tr><tr><td>2026/7/7</td><td>公視裁罰報導</td><td><a href="https://news.pts.org.tw/article/816445" rel="noopener noreferrer" target="_blank">https://news.pts.org.tw/article/816445</a></td></tr><tr><td>2026/7/7</td><td>中央社泰山裁罰</td><td><a href="https://www.cna.com.tw/news/aloc/202607070129.aspx" rel="noopener noreferrer" target="_blank">https://www.cna.com.tw/news/aloc/202607070129.aspx</a></td></tr><tr><td>2026/7/8</td><td>食藥署7/7擴大下架</td><td><a href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634443" rel="noopener noreferrer" target="_blank">https://www.fda.gov.tw/TC/newsContent.aspx?cid=4&amp;id=t634443</a></td></tr><tr><td>2026/7/8</td><td>公視擴大回收報導</td><td><a href="https://news.pts.org.tw/article/816581" rel="noopener noreferrer" target="_blank">https://news.pts.org.tw/article/816581</a></td></tr><tr><td>2026/7/8</td><td>中央社／華視轉載：7/8前全面下架</td><td><a href="https://news.cts.com.tw/cna/life/202607/202607073052602.html" rel="noopener noreferrer" target="_blank">https://news.cts.com.tw/cna/life/202607/202607073052602.html</a></td></tr></tbody></table></div></section>
+<div class="footer-note">更新依據：中聯油脂_對照式時間軸_各方說法v3.xlsx｜依最新版面要求調整折線圖、時間軸與來源列表。</div>
 </main>
-<footer class="footer">本網頁依上傳 Excel 檔內容自動轉製，未額外新增未列於工作表中的事實資料。傳播聲量數據已依月／日對應至事件時間軸；7/2–7/3為合併節點。建議發布前再確認主管機關與企業最新公告。</footer>
 <script>
-document.querySelectorAll('.toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const card = btn.closest('.timeline-card');
-    const panel = card.querySelector('.collapsible');
-    const isHidden = panel.classList.toggle('hidden');
-    btn.textContent = isHidden ? '展開各方說法' : '收合各方說法';
-    btn.setAttribute('aria-expanded', String(!isHidden));
+(function(){
+  function jumpTo(targetId){
+    if(!targetId) return;
+    var el = document.getElementById(targetId);
+    if(!el) return;
+    if(el.tagName.toLowerCase()==='details') el.open = true;
+    el.scrollIntoView({behavior:'smooth', block:'start'});
+    el.classList.remove('highlight');
+    void el.offsetWidth;
+    el.classList.add('highlight');
+  }
+  document.querySelectorAll('.chart-jump[data-scroll-target]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var target = a.getAttribute('data-scroll-target');
+      if(target){
+        e.preventDefault();
+        history.replaceState(null, '', '#' + target);
+        jumpTo(target);
+      }
+    });
   });
-});
-const search = document.getElementById('timelineSearch');
-search.addEventListener('input', () => {
-  const q = search.value.trim().toLowerCase();
-  document.querySelectorAll('.timeline-card').forEach(card => {
-    card.classList.toggle('hidden', q && !card.innerText.toLowerCase().includes(q));
-  });
-});
-// Fail-safe: any external URL added anywhere in the document opens in a new tab.
-document.querySelectorAll('a[href^="http"]').forEach(a => {
-  a.setAttribute('target','_blank');
-  a.setAttribute('rel','noopener noreferrer');
-});
+  if(location.hash){
+    var id = decodeURIComponent(location.hash.slice(1));
+    setTimeout(function(){ jumpTo(id); }, 100);
+  }
+})();
 </script>
 </body>
 </html>
